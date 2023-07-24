@@ -2,7 +2,7 @@
 //  AdvancedMobileProgrammingUITests.swift
 //  AdvancedMobileProgrammingUITests
 //
-//  Created by Ericsson on 24.07.2023..
+//  Created by Kevin Furjan on 24.07.2023.
 //
 
 import XCTest

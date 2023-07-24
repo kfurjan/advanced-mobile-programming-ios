@@ -141,8 +141,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				E978F1B02A6EC5A90065172A /* PBXTargetDependency */,
 			);
 			name = AdvancedMobileProgramming;
+			packageProductDependencies = (
+			);
 			productName = AdvancedMobileProgramming;
 			productReference = E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +218,9 @@
 				Base,
 			);
 			mainGroup = E978F1732A6EC0CE0065172A;
+			packageReferences = (
+				E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */,
+			);
 			productRefGroup = E978F17D2A6EC0CE0065172A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +297,10 @@
 			isa = PBXTargetDependency;
 			target = E978F17B2A6EC0CE0065172A /* AdvancedMobileProgramming */;
 			targetProxy = E978F1972A6EC0D20065172A /* PBXContainerItemProxy */;
+		};
+		E978F1B02A6EC5A90065172A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E978F1AF2A6EC5A90065172A /* SwiftLint */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +430,7 @@
 				DEVELOPMENT_TEAM = 29R48BN56K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AdvancedMobileProgramming;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +460,7 @@
 				DEVELOPMENT_TEAM = 29R48BN56K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AdvancedMobileProgramming;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E978F1AF2A6EC5A90065172A /* SwiftLint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
+			productName = "plugin:SwiftLint";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E978F1742A6EC0CE0065172A /* Project object */;
 }
