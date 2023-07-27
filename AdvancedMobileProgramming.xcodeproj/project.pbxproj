@@ -16,6 +16,56 @@
 		E925A7422A72599A007A7A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925A7412A72599A007A7A42 /* GoogleService-Info.plist */; };
 		E925A7432A72599A007A7A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925A7412A72599A007A7A42 /* GoogleService-Info.plist */; };
 		E925A7442A72599A007A7A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925A7412A72599A007A7A42 /* GoogleService-Info.plist */; };
+		E925A7472A725A30007A7A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7462A725A30007A7A42 /* AppDelegate.swift */; };
+		E925A7482A725A30007A7A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7462A725A30007A7A42 /* AppDelegate.swift */; };
+		E925A7492A725A30007A7A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7462A725A30007A7A42 /* AppDelegate.swift */; };
+		E925A74B2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A74A2A725AA7007A7A42 /* GIDConfigurationExtensions.swift */; };
+		E925A74C2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A74A2A725AA7007A7A42 /* GIDConfigurationExtensions.swift */; };
+		E925A74D2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A74A2A725AA7007A7A42 /* GIDConfigurationExtensions.swift */; };
+		E925A7512A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7502A725AF8007A7A42 /* GetGoogleUserUseCase.swift */; };
+		E925A7522A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7502A725AF8007A7A42 /* GetGoogleUserUseCase.swift */; };
+		E925A7532A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7502A725AF8007A7A42 /* GetGoogleUserUseCase.swift */; };
+		E925A7572A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7562A725B71007A7A42 /* GoogleAuthenticationError.swift */; };
+		E925A7582A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7562A725B71007A7A42 /* GoogleAuthenticationError.swift */; };
+		E925A7592A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7562A725B71007A7A42 /* GoogleAuthenticationError.swift */; };
+		E925A75C2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A75B2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift */; };
+		E925A75D2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A75B2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift */; };
+		E925A75E2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A75B2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift */; };
+		E925A7642A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7632A725D94007A7A42 /* AuthenticationViewModel.swift */; };
+		E925A7652A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7632A725D94007A7A42 /* AuthenticationViewModel.swift */; };
+		E925A7662A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7632A725D94007A7A42 /* AuthenticationViewModel.swift */; };
+		E925A76B2A725E00007A7A42 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A76A2A725E00007A7A42 /* LoginForm.swift */; };
+		E925A76C2A725E00007A7A42 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A76A2A725E00007A7A42 /* LoginForm.swift */; };
+		E925A76D2A725E00007A7A42 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A76A2A725E00007A7A42 /* LoginForm.swift */; };
+		E925A7752A725F69007A7A42 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7742A725F69007A7A42 /* StringConstants.swift */; };
+		E925A7762A725F69007A7A42 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7742A725F69007A7A42 /* StringConstants.swift */; };
+		E925A7772A725F69007A7A42 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7742A725F69007A7A42 /* StringConstants.swift */; };
+		E925A7822A726126007A7A42 /* LottieSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E925A7812A726126007A7A42 /* LottieSwiftUI */; };
+		E925A7862A726178007A7A42 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7852A726178007A7A42 /* LoginView.swift */; };
+		E925A7872A726178007A7A42 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7852A726178007A7A42 /* LoginView.swift */; };
+		E925A7882A726178007A7A42 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7852A726178007A7A42 /* LoginView.swift */; };
+		E925A78B2A726235007A7A42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A78A2A726235007A7A42 /* User.swift */; };
+		E925A78C2A726235007A7A42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A78A2A726235007A7A42 /* User.swift */; };
+		E925A78D2A726235007A7A42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A78A2A726235007A7A42 /* User.swift */; };
+		E925A7902A726269007A7A42 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A78F2A726269007A7A42 /* UserViewModel.swift */; };
+		E925A7912A726269007A7A42 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A78F2A726269007A7A42 /* UserViewModel.swift */; };
+		E925A7922A726269007A7A42 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A78F2A726269007A7A42 /* UserViewModel.swift */; };
+		E925A7962A7262C3007A7A42 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7952A7262C3007A7A42 /* UserDetailView.swift */; };
+		E925A7972A7262C3007A7A42 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7952A7262C3007A7A42 /* UserDetailView.swift */; };
+		E925A7982A7262C3007A7A42 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7952A7262C3007A7A42 /* UserDetailView.swift */; };
+		E925A79C2A726315007A7A42 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E925A79B2A726315007A7A42 /* SDWebImageSwiftUI */; };
+		E925A79E2A726337007A7A42 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A79D2A726337007A7A42 /* lottie-user-animation.json */; };
+		E925A79F2A726337007A7A42 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A79D2A726337007A7A42 /* lottie-user-animation.json */; };
+		E925A7A02A726337007A7A42 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A79D2A726337007A7A42 /* lottie-user-animation.json */; };
+		E925A7A22A72634E007A7A42 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A12A72634E007A7A42 /* UserView.swift */; };
+		E925A7A32A72634E007A7A42 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A12A72634E007A7A42 /* UserView.swift */; };
+		E925A7A42A72634E007A7A42 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A12A72634E007A7A42 /* UserView.swift */; };
+		E925A7A62A726385007A7A42 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A52A726385007A7A42 /* ButtonStyles.swift */; };
+		E925A7A72A726385007A7A42 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A52A726385007A7A42 /* ButtonStyles.swift */; };
+		E925A7A82A726385007A7A42 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A52A726385007A7A42 /* ButtonStyles.swift */; };
+		E925A7AB2A7263B6007A7A42 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7AA2A7263B6007A7A42 /* Transitions.swift */; };
+		E925A7AC2A7263B6007A7A42 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7AA2A7263B6007A7A42 /* Transitions.swift */; };
+		E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7AA2A7263B6007A7A42 /* Transitions.swift */; };
 		E978F1802A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */; };
 		E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F1812A6EC0CF0065172A /* ContentView.swift */; };
 		E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E978F1832A6EC0D10065172A /* Assets.xcassets */; };
@@ -46,6 +96,23 @@
 		E925A7302A716A3F007A7A42 /* lottie-login-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-login-animation.json"; sourceTree = "<group>"; };
 		E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		E925A7412A72599A007A7A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E925A7452A7259F5007A7A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E925A7462A725A30007A7A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E925A74A2A725AA7007A7A42 /* GIDConfigurationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIDConfigurationExtensions.swift; sourceTree = "<group>"; };
+		E925A7502A725AF8007A7A42 /* GetGoogleUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoogleUserUseCase.swift; sourceTree = "<group>"; };
+		E925A7562A725B71007A7A42 /* GoogleAuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationError.swift; sourceTree = "<group>"; };
+		E925A75B2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogleUseCase.swift; sourceTree = "<group>"; };
+		E925A7632A725D94007A7A42 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		E925A76A2A725E00007A7A42 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		E925A7742A725F69007A7A42 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		E925A7852A726178007A7A42 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E925A78A2A726235007A7A42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E925A78F2A726269007A7A42 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		E925A7952A7262C3007A7A42 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		E925A79D2A726337007A7A42 /* lottie-user-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-user-animation.json"; sourceTree = "<group>"; };
+		E925A7A12A72634E007A7A42 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		E925A7A52A726385007A7A42 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		E925A7AA2A7263B6007A7A42 /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
 		E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedMobileProgramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMobileProgrammingApp.swift; sourceTree = "<group>"; };
 		E978F1812A6EC0CF0065172A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A79C2A726315007A7A42 /* SDWebImageSwiftUI in Frameworks */,
+				E925A7822A726126007A7A42 /* LottieSwiftUI in Frameworks */,
 				E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */,
 				E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */,
 				E925A73E2A725957007A7A42 /* GoogleSignIn in Frameworks */,
@@ -99,6 +168,7 @@
 		E925A72C2A7169BE007A7A42 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				E925A79D2A726337007A7A42 /* lottie-user-animation.json */,
 				E925A7302A716A3F007A7A42 /* lottie-login-animation.json */,
 			);
 			path = Animations;
@@ -108,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */,
+				E925A74A2A725AA7007A7A42 /* GIDConfigurationExtensions.swift */,
+				E925A7742A725F69007A7A42 /* StringConstants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -115,6 +187,8 @@
 		E925A7352A725616007A7A42 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E925A7552A725B63007A7A42 /* Error */,
+				E925A74F2A725ADC007A7A42 /* Use Case */,
 				E925A7362A725621007A7A42 /* Model */,
 			);
 			path = Domain;
@@ -123,13 +197,87 @@
 		E925A7362A725621007A7A42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E925A78A2A726235007A7A42 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E925A74F2A725ADC007A7A42 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7502A725AF8007A7A42 /* GetGoogleUserUseCase.swift */,
+				E925A75B2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		E925A7552A725B63007A7A42 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7562A725B71007A7A42 /* GoogleAuthenticationError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		E925A7612A725D6F007A7A42 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7682A725DDA007A7A42 /* View */,
+				E925A7622A725D83007A7A42 /* View Model */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E925A7622A725D83007A7A42 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7632A725D94007A7A42 /* AuthenticationViewModel.swift */,
+				E925A78F2A726269007A7A42 /* UserViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		E925A7682A725DDA007A7A42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7942A7262B2007A7A42 /* User */,
+				E925A7792A725FF8007A7A42 /* Helper */,
+				E925A7692A725DE5007A7A42 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E925A7692A725DE5007A7A42 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E925A76A2A725E00007A7A42 /* LoginForm.swift */,
+				E925A7852A726178007A7A42 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E925A7792A725FF8007A7A42 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7A52A726385007A7A42 /* ButtonStyles.swift */,
+				E925A7AA2A7263B6007A7A42 /* Transitions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E925A7942A7262B2007A7A42 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7952A7262C3007A7A42 /* UserDetailView.swift */,
+				E925A7A12A72634E007A7A42 /* UserView.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		E978F1732A6EC0CE0065172A = {
 			isa = PBXGroup;
 			children = (
+				E925A7412A72599A007A7A42 /* GoogleService-Info.plist */,
 				E978F17E2A6EC0CF0065172A /* AdvancedMobileProgramming */,
 				E978F18F2A6EC0D10065172A /* AdvancedMobileProgrammingTests */,
 				E978F1992A6EC0D20065172A /* AdvancedMobileProgrammingUITests */,
@@ -150,13 +298,15 @@
 		E978F17E2A6EC0CF0065172A /* AdvancedMobileProgramming */ = {
 			isa = PBXGroup;
 			children = (
-				E925A7412A72599A007A7A42 /* GoogleService-Info.plist */,
+				E925A7452A7259F5007A7A42 /* Info.plist */,
 				E925A7352A725616007A7A42 /* Domain */,
 				E925A72B2A7169A8007A7A42 /* Core */,
+				E925A7612A725D6F007A7A42 /* Presentation */,
 				E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */,
 				E978F1812A6EC0CF0065172A /* ContentView.swift */,
 				E978F1832A6EC0D10065172A /* Assets.xcassets */,
 				E978F1852A6EC0D10065172A /* Preview Content */,
+				E925A7462A725A30007A7A42 /* AppDelegate.swift */,
 			);
 			path = AdvancedMobileProgramming;
 			sourceTree = "<group>";
@@ -208,6 +358,8 @@
 				E925A73A2A725891007A7A42 /* FirebaseAuth */,
 				E925A73D2A725957007A7A42 /* GoogleSignIn */,
 				E925A73F2A725957007A7A42 /* GoogleSignInSwift */,
+				E925A7812A726126007A7A42 /* LottieSwiftUI */,
+				E925A79B2A726315007A7A42 /* SDWebImageSwiftUI */,
 			);
 			productName = AdvancedMobileProgramming;
 			productReference = E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */;
@@ -285,6 +437,8 @@
 				E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */,
 				E925A7372A725891007A7A42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				E925A73C2A725957007A7A42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				E925A7802A726126007A7A42 /* XCRemoteSwiftPackageReference "Lottie-SwiftUI" */,
+				E925A79A2A726315007A7A42 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = E978F17D2A6EC0CE0065172A /* Products */;
 			projectDirPath = "";
@@ -306,6 +460,7 @@
 				E925A7422A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 				E978F1872A6EC0D10065172A /* Preview Assets.xcassets in Resources */,
 				E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */,
+				E925A79E2A726337007A7A42 /* lottie-user-animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A79F2A726337007A7A42 /* lottie-user-animation.json in Resources */,
 				E925A7432A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A7A02A726337007A7A42 /* lottie-user-animation.json in Resources */,
 				E925A7442A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,8 +489,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A78B2A726235007A7A42 /* User.swift in Sources */,
+				E925A7512A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
+				E925A7752A725F69007A7A42 /* StringConstants.swift in Sources */,
+				E925A7A22A72634E007A7A42 /* UserView.swift in Sources */,
+				E925A7472A725A30007A7A42 /* AppDelegate.swift in Sources */,
+				E925A75C2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
+				E925A7902A726269007A7A42 /* UserViewModel.swift in Sources */,
+				E925A7572A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
 				E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */,
+				E925A7A62A726385007A7A42 /* ButtonStyles.swift in Sources */,
+				E925A7862A726178007A7A42 /* LoginView.swift in Sources */,
+				E925A76B2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E925A7AB2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */,
+				E925A7642A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
+				E925A74B2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
+				E925A7962A7262C3007A7A42 /* UserDetailView.swift in Sources */,
 				E978F1802A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +514,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A74C2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
+				E925A7912A726269007A7A42 /* UserViewModel.swift in Sources */,
+				E925A7482A725A30007A7A42 /* AppDelegate.swift in Sources */,
+				E925A7762A725F69007A7A42 /* StringConstants.swift in Sources */,
+				E925A7972A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E925A7652A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
+				E925A7522A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
+				E925A7582A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
+				E925A75D2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
 				E978F1912A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift in Sources */,
+				E925A7AC2A7263B6007A7A42 /* Transitions.swift in Sources */,
+				E925A7872A726178007A7A42 /* LoginView.swift in Sources */,
+				E925A76C2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E925A78C2A726235007A7A42 /* User.swift in Sources */,
+				E925A7A72A726385007A7A42 /* ButtonStyles.swift in Sources */,
+				E925A7A32A72634E007A7A42 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +537,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A75E2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
+				E925A7492A725A30007A7A42 /* AppDelegate.swift in Sources */,
 				E978F19D2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift in Sources */,
+				E925A74D2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
+				E925A7982A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E925A7662A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
+				E925A7592A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
+				E925A7A42A72634E007A7A42 /* UserView.swift in Sources */,
 				E978F19B2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift in Sources */,
+				E925A76D2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */,
+				E925A78D2A726235007A7A42 /* User.swift in Sources */,
+				E925A7922A726269007A7A42 /* UserViewModel.swift in Sources */,
+				E925A7882A726178007A7A42 /* LoginView.swift in Sources */,
+				E925A7A82A726385007A7A42 /* ButtonStyles.swift in Sources */,
+				E925A7772A725F69007A7A42 /* StringConstants.swift in Sources */,
+				E925A7532A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +702,7 @@
 				DEVELOPMENT_TEAM = 29R48BN56K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdvancedMobileProgramming/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AdvancedMobileProgramming;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -530,6 +733,7 @@
 				DEVELOPMENT_TEAM = 29R48BN56K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdvancedMobileProgramming/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AdvancedMobileProgramming;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -683,6 +887,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		E925A7802A726126007A7A42 /* XCRemoteSwiftPackageReference "Lottie-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LukasHromadnik/Lottie-SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E925A79A2A726315007A7A42 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
@@ -713,6 +933,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E925A73C2A725957007A7A42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		E925A7812A726126007A7A42 /* LottieSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E925A7802A726126007A7A42 /* XCRemoteSwiftPackageReference "Lottie-SwiftUI" */;
+			productName = LottieSwiftUI;
+		};
+		E925A79B2A726315007A7A42 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E925A79A2A726315007A7A42 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 		E978F1AF2A6EC5A90065172A /* SwiftLint */ = {
 			isa = XCSwiftPackageProductDependency;
