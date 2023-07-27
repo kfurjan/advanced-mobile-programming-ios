@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		E925A7312A716A3F007A7A42 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A7302A716A3F007A7A42 /* lottie-login-animation.json */; };
 		E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */; };
+		E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E925A7382A725891007A7A42 /* FirebaseAnalytics */; };
+		E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E925A73A2A725891007A7A42 /* FirebaseAuth */; };
+		E925A73E2A725957007A7A42 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E925A73D2A725957007A7A42 /* GoogleSignIn */; };
+		E925A7402A725957007A7A42 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E925A73F2A725957007A7A42 /* GoogleSignInSwift */; };
+		E925A7422A72599A007A7A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925A7412A72599A007A7A42 /* GoogleService-Info.plist */; };
+		E925A7432A72599A007A7A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925A7412A72599A007A7A42 /* GoogleService-Info.plist */; };
+		E925A7442A72599A007A7A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E925A7412A72599A007A7A42 /* GoogleService-Info.plist */; };
 		E978F1802A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */; };
 		E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F1812A6EC0CF0065172A /* ContentView.swift */; };
 		E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E978F1832A6EC0D10065172A /* Assets.xcassets */; };
@@ -38,6 +45,7 @@
 /* Begin PBXFileReference section */
 		E925A7302A716A3F007A7A42 /* lottie-login-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-login-animation.json"; sourceTree = "<group>"; };
 		E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		E925A7412A72599A007A7A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedMobileProgramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMobileProgrammingApp.swift; sourceTree = "<group>"; };
 		E978F1812A6EC0CF0065172A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */,
+				E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */,
+				E925A73E2A725957007A7A42 /* GoogleSignIn in Frameworks */,
+				E925A7402A725957007A7A42 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +112,21 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		E925A7352A725616007A7A42 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E925A7362A725621007A7A42 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E925A7362A725621007A7A42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E978F1732A6EC0CE0065172A = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +150,8 @@
 		E978F17E2A6EC0CF0065172A /* AdvancedMobileProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				E925A7412A72599A007A7A42 /* GoogleService-Info.plist */,
+				E925A7352A725616007A7A42 /* Domain */,
 				E925A72B2A7169A8007A7A42 /* Core */,
 				E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */,
 				E978F1812A6EC0CF0065172A /* ContentView.swift */,
@@ -175,6 +204,10 @@
 			);
 			name = AdvancedMobileProgramming;
 			packageProductDependencies = (
+				E925A7382A725891007A7A42 /* FirebaseAnalytics */,
+				E925A73A2A725891007A7A42 /* FirebaseAuth */,
+				E925A73D2A725957007A7A42 /* GoogleSignIn */,
+				E925A73F2A725957007A7A42 /* GoogleSignInSwift */,
 			);
 			productName = AdvancedMobileProgramming;
 			productReference = E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */;
@@ -250,6 +283,8 @@
 			mainGroup = E978F1732A6EC0CE0065172A;
 			packageReferences = (
 				E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */,
+				E925A7372A725891007A7A42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E925A73C2A725957007A7A42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = E978F17D2A6EC0CE0065172A /* Products */;
 			projectDirPath = "";
@@ -268,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E925A7312A716A3F007A7A42 /* lottie-login-animation.json in Resources */,
+				E925A7422A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 				E978F1872A6EC0D10065172A /* Preview Assets.xcassets in Resources */,
 				E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */,
 			);
@@ -277,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A7432A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E925A7442A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +667,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E925A7372A725891007A7A42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		E925A73C2A725957007A7A42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
@@ -640,6 +694,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E925A7382A725891007A7A42 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E925A7372A725891007A7A42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E925A73A2A725891007A7A42 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E925A7372A725891007A7A42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E925A73D2A725957007A7A42 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E925A73C2A725957007A7A42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		E925A73F2A725957007A7A42 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E925A73C2A725957007A7A42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
 		E978F1AF2A6EC5A90065172A /* SwiftLint */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
