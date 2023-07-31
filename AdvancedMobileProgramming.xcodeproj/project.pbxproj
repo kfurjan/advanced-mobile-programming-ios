@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E925A7312A716A3F007A7A42 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A7302A716A3F007A7A42 /* lottie-login-animation.json */; };
+		E90B3EED2A778D2200418AE0 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EEC2A778D2200418AE0 /* lottie-user-animation.json */; };
+		E90B3EEE2A778D2200418AE0 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EEC2A778D2200418AE0 /* lottie-user-animation.json */; };
+		E90B3EEF2A778D2200418AE0 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EEC2A778D2200418AE0 /* lottie-user-animation.json */; };
+		E90B3EF22A778E7E00418AE0 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */; };
+		E90B3EF32A778E7E00418AE0 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */; };
+		E90B3EF42A778E7E00418AE0 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */; };
 		E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */; };
 		E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E925A7382A725891007A7A42 /* FirebaseAnalytics */; };
 		E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E925A73A2A725891007A7A42 /* FirebaseAuth */; };
@@ -54,9 +59,6 @@
 		E925A7972A7262C3007A7A42 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7952A7262C3007A7A42 /* UserDetailView.swift */; };
 		E925A7982A7262C3007A7A42 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7952A7262C3007A7A42 /* UserDetailView.swift */; };
 		E925A79C2A726315007A7A42 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E925A79B2A726315007A7A42 /* SDWebImageSwiftUI */; };
-		E925A79E2A726337007A7A42 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A79D2A726337007A7A42 /* lottie-user-animation.json */; };
-		E925A79F2A726337007A7A42 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A79D2A726337007A7A42 /* lottie-user-animation.json */; };
-		E925A7A02A726337007A7A42 /* lottie-user-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E925A79D2A726337007A7A42 /* lottie-user-animation.json */; };
 		E925A7A22A72634E007A7A42 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A12A72634E007A7A42 /* UserView.swift */; };
 		E925A7A32A72634E007A7A42 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A12A72634E007A7A42 /* UserView.swift */; };
 		E925A7A42A72634E007A7A42 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7A12A72634E007A7A42 /* UserView.swift */; };
@@ -93,7 +95,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E925A7302A716A3F007A7A42 /* lottie-login-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-login-animation.json"; sourceTree = "<group>"; };
+		E90B3EEC2A778D2200418AE0 /* lottie-user-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-user-animation.json"; sourceTree = "<group>"; };
+		E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-login-animation.json"; sourceTree = "<group>"; };
 		E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		E925A7412A72599A007A7A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E925A7452A7259F5007A7A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +112,6 @@
 		E925A78A2A726235007A7A42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E925A78F2A726269007A7A42 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		E925A7952A7262C3007A7A42 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
-		E925A79D2A726337007A7A42 /* lottie-user-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-user-animation.json"; sourceTree = "<group>"; };
 		E925A7A12A72634E007A7A42 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		E925A7A52A726385007A7A42 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		E925A7AA2A7263B6007A7A42 /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
@@ -168,8 +170,8 @@
 		E925A72C2A7169BE007A7A42 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				E925A79D2A726337007A7A42 /* lottie-user-animation.json */,
-				E925A7302A716A3F007A7A42 /* lottie-login-animation.json */,
+				E90B3EEC2A778D2200418AE0 /* lottie-user-animation.json */,
+				E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -456,11 +458,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E925A7312A716A3F007A7A42 /* lottie-login-animation.json in Resources */,
 				E925A7422A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 				E978F1872A6EC0D10065172A /* Preview Assets.xcassets in Resources */,
 				E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */,
-				E925A79E2A726337007A7A42 /* lottie-user-animation.json in Resources */,
+				E90B3EF22A778E7E00418AE0 /* lottie-login-animation.json in Resources */,
+				E90B3EED2A778D2200418AE0 /* lottie-user-animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +470,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E925A79F2A726337007A7A42 /* lottie-user-animation.json in Resources */,
+				E90B3EF32A778E7E00418AE0 /* lottie-login-animation.json in Resources */,
+				E90B3EEE2A778D2200418AE0 /* lottie-user-animation.json in Resources */,
 				E925A7432A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +480,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E925A7A02A726337007A7A42 /* lottie-user-animation.json in Resources */,
+				E90B3EF42A778E7E00418AE0 /* lottie-login-animation.json in Resources */,
+				E90B3EEF2A778D2200418AE0 /* lottie-user-animation.json in Resources */,
 				E925A7442A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
