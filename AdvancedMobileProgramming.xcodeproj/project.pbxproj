@@ -13,6 +13,30 @@
 		E90B3EF22A778E7E00418AE0 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */; };
 		E90B3EF32A778E7E00418AE0 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */; };
 		E90B3EF42A778E7E00418AE0 /* lottie-login-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */; };
+		E90B3EF72A77957700418AE0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E90B3EF62A77957700418AE0 /* Alamofire */; };
+		E90B3EFB2A7796ED00418AE0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E90B3EFA2A7796ED00418AE0 /* Realm */; };
+		E90B3EFD2A7796ED00418AE0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E90B3EFC2A7796ED00418AE0 /* RealmSwift */; };
+		E90B3EFF2A77D6AA00418AE0 /* EpisodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3EFE2A77D6AA00418AE0 /* EpisodeApi.swift */; };
+		E90B3F002A77D6AA00418AE0 /* EpisodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3EFE2A77D6AA00418AE0 /* EpisodeApi.swift */; };
+		E90B3F012A77D6AA00418AE0 /* EpisodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3EFE2A77D6AA00418AE0 /* EpisodeApi.swift */; };
+		E90B3F032A77D70D00418AE0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F022A77D70D00418AE0 /* Info.swift */; };
+		E90B3F042A77D70D00418AE0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F022A77D70D00418AE0 /* Info.swift */; };
+		E90B3F052A77D70D00418AE0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F022A77D70D00418AE0 /* Info.swift */; };
+		E90B3F092A77D96700418AE0 /* EpisodeDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F082A77D96700418AE0 /* EpisodeDao.swift */; };
+		E90B3F0A2A77D96700418AE0 /* EpisodeDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F082A77D96700418AE0 /* EpisodeDao.swift */; };
+		E90B3F0B2A77D96700418AE0 /* EpisodeDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F082A77D96700418AE0 /* EpisodeDao.swift */; };
+		E90B3F0E2A77DADC00418AE0 /* LocationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F0D2A77DADC00418AE0 /* LocationApi.swift */; };
+		E90B3F0F2A77DADC00418AE0 /* LocationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F0D2A77DADC00418AE0 /* LocationApi.swift */; };
+		E90B3F102A77DADC00418AE0 /* LocationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F0D2A77DADC00418AE0 /* LocationApi.swift */; };
+		E90B3F132A77DBC500418AE0 /* LocationDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F122A77DBC500418AE0 /* LocationDao.swift */; };
+		E90B3F142A77DBC500418AE0 /* LocationDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F122A77DBC500418AE0 /* LocationDao.swift */; };
+		E90B3F152A77DBC500418AE0 /* LocationDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F122A77DBC500418AE0 /* LocationDao.swift */; };
+		E90B3F1A2A77DD0900418AE0 /* CharacterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F192A77DD0900418AE0 /* CharacterApi.swift */; };
+		E90B3F1B2A77DD0900418AE0 /* CharacterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F192A77DD0900418AE0 /* CharacterApi.swift */; };
+		E90B3F1C2A77DD0900418AE0 /* CharacterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F192A77DD0900418AE0 /* CharacterApi.swift */; };
+		E90B3F1E2A77DD1100418AE0 /* CharacterDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */; };
+		E90B3F1F2A77DD1100418AE0 /* CharacterDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */; };
+		E90B3F202A77DD1100418AE0 /* CharacterDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */; };
 		E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */; };
 		E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E925A7382A725891007A7A42 /* FirebaseAnalytics */; };
 		E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E925A73A2A725891007A7A42 /* FirebaseAuth */; };
@@ -97,6 +121,13 @@
 /* Begin PBXFileReference section */
 		E90B3EEC2A778D2200418AE0 /* lottie-user-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-user-animation.json"; sourceTree = "<group>"; };
 		E90B3EF12A778E7E00418AE0 /* lottie-login-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-login-animation.json"; sourceTree = "<group>"; };
+		E90B3EFE2A77D6AA00418AE0 /* EpisodeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeApi.swift; sourceTree = "<group>"; };
+		E90B3F022A77D70D00418AE0 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		E90B3F082A77D96700418AE0 /* EpisodeDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDao.swift; sourceTree = "<group>"; };
+		E90B3F0D2A77DADC00418AE0 /* LocationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApi.swift; sourceTree = "<group>"; };
+		E90B3F122A77DBC500418AE0 /* LocationDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDao.swift; sourceTree = "<group>"; };
+		E90B3F192A77DD0900418AE0 /* CharacterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterApi.swift; sourceTree = "<group>"; };
+		E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDao.swift; sourceTree = "<group>"; };
 		E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		E925A7412A72599A007A7A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E925A7452A7259F5007A7A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -133,10 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E925A79C2A726315007A7A42 /* SDWebImageSwiftUI in Frameworks */,
+				E90B3EF72A77957700418AE0 /* Alamofire in Frameworks */,
 				E925A7822A726126007A7A42 /* LottieSwiftUI in Frameworks */,
+				E90B3EFD2A7796ED00418AE0 /* RealmSwift in Frameworks */,
 				E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */,
 				E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */,
 				E925A73E2A725957007A7A42 /* GoogleSignIn in Frameworks */,
+				E90B3EFB2A7796ED00418AE0 /* Realm in Frameworks */,
 				E925A7402A725957007A7A42 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +192,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E90B3F062A77D81A00418AE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E925A78A2A726235007A7A42 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E90B3F072A77D82B00418AE0 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3EFE2A77D6AA00418AE0 /* EpisodeApi.swift */,
+				E90B3F082A77D96700418AE0 /* EpisodeDao.swift */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
+		E90B3F0C2A77DACC00418AE0 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3F0D2A77DADC00418AE0 /* LocationApi.swift */,
+				E90B3F122A77DBC500418AE0 /* LocationDao.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		E90B3F182A77DCF100418AE0 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3F192A77DD0900418AE0 /* CharacterApi.swift */,
+				E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		E925A72B2A7169A8007A7A42 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +268,10 @@
 		E925A7362A725621007A7A42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E925A78A2A726235007A7A42 /* User.swift */,
+				E90B3F182A77DCF100418AE0 /* Character */,
+				E90B3F0C2A77DACC00418AE0 /* Location */,
+				E90B3F072A77D82B00418AE0 /* Episode */,
+				E90B3F022A77D70D00418AE0 /* Info.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +296,7 @@
 		E925A7612A725D6F007A7A42 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E90B3F062A77D81A00418AE0 /* Model */,
 				E925A7682A725DDA007A7A42 /* View */,
 				E925A7622A725D83007A7A42 /* View Model */,
 			);
@@ -362,6 +435,9 @@
 				E925A73F2A725957007A7A42 /* GoogleSignInSwift */,
 				E925A7812A726126007A7A42 /* LottieSwiftUI */,
 				E925A79B2A726315007A7A42 /* SDWebImageSwiftUI */,
+				E90B3EF62A77957700418AE0 /* Alamofire */,
+				E90B3EFA2A7796ED00418AE0 /* Realm */,
+				E90B3EFC2A7796ED00418AE0 /* RealmSwift */,
 			);
 			productName = AdvancedMobileProgramming;
 			productReference = E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */;
@@ -441,6 +517,8 @@
 				E925A73C2A725957007A7A42 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				E925A7802A726126007A7A42 /* XCRemoteSwiftPackageReference "Lottie-SwiftUI" */,
 				E925A79A2A726315007A7A42 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				E90B3EF52A77957700418AE0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E90B3EF92A7796ED00418AE0 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = E978F17D2A6EC0CE0065172A /* Products */;
 			projectDirPath = "";
@@ -497,19 +575,26 @@
 				E925A7512A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
 				E925A7752A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E925A7A22A72634E007A7A42 /* UserView.swift in Sources */,
+				E90B3F1A2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
 				E925A7472A725A30007A7A42 /* AppDelegate.swift in Sources */,
+				E90B3EFF2A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
+				E90B3F132A77DBC500418AE0 /* LocationDao.swift in Sources */,
 				E925A75C2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
 				E925A7902A726269007A7A42 /* UserViewModel.swift in Sources */,
 				E925A7572A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
+				E90B3F0E2A77DADC00418AE0 /* LocationApi.swift in Sources */,
 				E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */,
 				E925A7A62A726385007A7A42 /* ButtonStyles.swift in Sources */,
 				E925A7862A726178007A7A42 /* LoginView.swift in Sources */,
 				E925A76B2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E90B3F032A77D70D00418AE0 /* Info.swift in Sources */,
 				E925A7AB2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */,
 				E925A7642A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A74B2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
+				E90B3F1E2A77DD1100418AE0 /* CharacterDao.swift in Sources */,
 				E925A7962A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E90B3F092A77D96700418AE0 /* EpisodeDao.swift in Sources */,
 				E978F1802A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,18 +603,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90B3F0A2A77D96700418AE0 /* EpisodeDao.swift in Sources */,
 				E925A74C2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
+				E90B3F1B2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
 				E925A7912A726269007A7A42 /* UserViewModel.swift in Sources */,
 				E925A7482A725A30007A7A42 /* AppDelegate.swift in Sources */,
+				E90B3F142A77DBC500418AE0 /* LocationDao.swift in Sources */,
+				E90B3F042A77D70D00418AE0 /* Info.swift in Sources */,
 				E925A7762A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E925A7972A7262C3007A7A42 /* UserDetailView.swift in Sources */,
 				E925A7652A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A7522A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
 				E925A7582A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
+				E90B3F1F2A77DD1100418AE0 /* CharacterDao.swift in Sources */,
 				E925A75D2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
+				E90B3F002A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E978F1912A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift in Sources */,
 				E925A7AC2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E925A7872A726178007A7A42 /* LoginView.swift in Sources */,
+				E90B3F0F2A77DADC00418AE0 /* LocationApi.swift in Sources */,
 				E925A76C2A725E00007A7A42 /* LoginForm.swift in Sources */,
 				E925A78C2A726235007A7A42 /* User.swift in Sources */,
 				E925A7A72A726385007A7A42 /* ButtonStyles.swift in Sources */,
@@ -544,13 +636,19 @@
 				E925A75E2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
 				E925A7492A725A30007A7A42 /* AppDelegate.swift in Sources */,
 				E978F19D2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift in Sources */,
+				E90B3F102A77DADC00418AE0 /* LocationApi.swift in Sources */,
+				E90B3F1C2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
 				E925A74D2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
 				E925A7982A7262C3007A7A42 /* UserDetailView.swift in Sources */,
 				E925A7662A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A7592A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
 				E925A7A42A72634E007A7A42 /* UserView.swift in Sources */,
+				E90B3F0B2A77D96700418AE0 /* EpisodeDao.swift in Sources */,
+				E90B3F052A77D70D00418AE0 /* Info.swift in Sources */,
 				E978F19B2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift in Sources */,
 				E925A76D2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E90B3F202A77DD1100418AE0 /* CharacterDao.swift in Sources */,
+				E90B3F012A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E925A78D2A726235007A7A42 /* User.swift in Sources */,
 				E925A7922A726269007A7A42 /* UserViewModel.swift in Sources */,
@@ -558,6 +656,7 @@
 				E925A7A82A726385007A7A42 /* ButtonStyles.swift in Sources */,
 				E925A7772A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E925A7532A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
+				E90B3F152A77DBC500418AE0 /* LocationDao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +974,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E90B3EF52A77957700418AE0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E90B3EF92A7796ED00418AE0 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		E925A7372A725891007A7A42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -918,6 +1033,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E90B3EF62A77957700418AE0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E90B3EF52A77957700418AE0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E90B3EFA2A7796ED00418AE0 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E90B3EF92A7796ED00418AE0 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		E90B3EFC2A7796ED00418AE0 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E90B3EF92A7796ED00418AE0 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		E925A7382A725891007A7A42 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E925A7372A725891007A7A42 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
