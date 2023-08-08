@@ -14,8 +14,9 @@ protocol ApiRepository {
 
     /// Generic method that fetches all data from REST API.
     ///
+    /// - Parameter page:page of the REST API response.
     /// - Returns: list of generic `T` object.
-    func getAll() async throws -> T
+    func getAll(page: Int) async throws -> T
 
     /// Generic method that fetches single object from REST API
     /// based on its ID.

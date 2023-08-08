@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Episode {
+struct Episode: Hashable {
     let id: Int
     let name, airDate, episode: String
     let characters: [String]
+    let nextPageExists: Bool
 }

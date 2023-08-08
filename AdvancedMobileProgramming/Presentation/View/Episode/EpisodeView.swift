@@ -12,7 +12,12 @@ struct EpisodeView: View {
     @ObservedObject var episodeViewModel = EpisodeViewModel()
 
     var body: some View {
-        Text("EpisodeView!")
+        List(episodeViewModel.episodes, id: \.self) { episode in
+            Text(episode.name)
+                .onAppear {
+                    episodeViewModel.onScrolledAtBottom(episode: episode)
+                }
+        }
     }
 }
 

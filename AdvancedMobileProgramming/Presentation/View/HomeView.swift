@@ -14,9 +14,9 @@ struct HomeView: View {
                 .transition(.moveAndFade)
                 .tabItem {
                     Label {
-                        Text("Exercises", comment: "Exercises tab item")
+                        Text("Episodes", comment: "Episodes tab item")
                     } icon: {
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "tv.fill")
                     }
                 }
             UserView()

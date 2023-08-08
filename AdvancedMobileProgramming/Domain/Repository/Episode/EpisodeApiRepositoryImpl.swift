@@ -15,11 +15,12 @@ final class EpisodeApiRepositoryImpl: ApiRepository {
 
     /// Generic method that fetches all data from REST API.
     ///
+    /// - Parameter page:page of the REST API response.
     /// - Returns: ``EpisodeApi`` object.
-    func getAll() async throws -> EpisodeApi {
+    func getAll(page: Int = 1) async throws -> EpisodeApi {
         return try await withCheckedThrowingContinuation { continuation in
             AF.request(
-                ApiEndpoints.episode,
+                "\(ApiEndpoints.episode)?page=\(page)",
                 method: .get,
                 encoding: JSONEncoding.default
             )

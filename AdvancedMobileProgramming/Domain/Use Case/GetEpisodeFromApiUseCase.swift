@@ -14,16 +14,19 @@ final class GetEpisodeFromApiUseCase {
     /// Fetches all episodes using ``EpisodeApiRepositoryImpl`` and ``EpisodeApi``
     /// and maps them to the list of ``Episode`` objects.
     ///
+    /// - Parameter page:page of the REST API response.
     /// - Returns: List of ``Episode`` objects if success, otherwise ``ApiError``.
-    func getAllEpisodes() async -> Result<[Episode], ApiError> {
+    func getAllEpisodes(page: Int = 1) async -> Result<[Episode], ApiError> {
         do {
-            return .success(try await _episodeApiRepository.getAll().results.map { episodeResult in
+            let data = try await _episodeApiRepository.getAll(page: page)
+            return .success(data.results.map { episodeResult in
                 Episode(
                     id: episodeResult.id,
                     name: episodeResult.name,
                     airDate: episodeResult.airDate,
                     episode: episodeResult.episode,
-                    characters: episodeResult.characters
+                    characters: episodeResult.characters,
+                    nextPageExists: data.info.next != nil ? true : false
                 )
             })
         } catch {
