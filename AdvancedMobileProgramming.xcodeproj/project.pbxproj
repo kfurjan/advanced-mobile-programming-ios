@@ -37,6 +37,12 @@
 		E90B3F1E2A77DD1100418AE0 /* CharacterDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */; };
 		E90B3F1F2A77DD1100418AE0 /* CharacterDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */; };
 		E90B3F202A77DD1100418AE0 /* CharacterDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */; };
+		E90B3F2B2A78EE1100418AE0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2A2A78EE1100418AE0 /* Localizable.swift */; };
+		E90B3F2C2A78EE1100418AE0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2A2A78EE1100418AE0 /* Localizable.swift */; };
+		E90B3F2D2A78EE1100418AE0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2A2A78EE1100418AE0 /* Localizable.swift */; };
+		E90B3F2F2A78EE4C00418AE0 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */; };
+		E90B3F302A78EE4C00418AE0 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */; };
+		E90B3F312A78EE4C00418AE0 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */; };
 		E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */; };
 		E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E925A7382A725891007A7A42 /* FirebaseAnalytics */; };
 		E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E925A73A2A725891007A7A42 /* FirebaseAuth */; };
@@ -128,6 +134,8 @@
 		E90B3F122A77DBC500418AE0 /* LocationDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDao.swift; sourceTree = "<group>"; };
 		E90B3F192A77DD0900418AE0 /* CharacterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterApi.swift; sourceTree = "<group>"; };
 		E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDao.swift; sourceTree = "<group>"; };
+		E90B3F2A2A78EE1100418AE0 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		E925A7412A72599A007A7A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E925A7452A7259F5007A7A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -227,6 +235,30 @@
 			path = Character;
 			sourceTree = "<group>";
 		};
+		E90B3F272A78EDEE00418AE0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3F292A78EE0200418AE0 /* Localization */,
+				E90B3F282A78EDF600418AE0 /* Repository */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E90B3F282A78EDF600418AE0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E90B3F292A78EE0200418AE0 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3F2A2A78EE1100418AE0 /* Localizable.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		E925A72B2A7169A8007A7A42 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,7 +290,7 @@
 		E925A7352A725616007A7A42 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				E925A7552A725B63007A7A42 /* Error */,
+				E90B3F272A78EDEE00418AE0 /* Protocol */,
 				E925A74F2A725ADC007A7A42 /* Use Case */,
 				E925A7362A725621007A7A42 /* Model */,
 			);
@@ -268,6 +300,7 @@
 		E925A7362A725621007A7A42 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E925A7552A725B63007A7A42 /* Error */,
 				E90B3F182A77DCF100418AE0 /* Character */,
 				E90B3F0C2A77DACC00418AE0 /* Location */,
 				E90B3F072A77D82B00418AE0 /* Episode */,
@@ -289,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				E925A7562A725B71007A7A42 /* GoogleAuthenticationError.swift */,
+				E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -594,7 +628,9 @@
 				E925A74B2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
 				E90B3F1E2A77DD1100418AE0 /* CharacterDao.swift in Sources */,
 				E925A7962A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E90B3F2F2A78EE4C00418AE0 /* ApiError.swift in Sources */,
 				E90B3F092A77D96700418AE0 /* EpisodeDao.swift in Sources */,
+				E90B3F2B2A78EE1100418AE0 /* Localizable.swift in Sources */,
 				E978F1802A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +661,8 @@
 				E925A76C2A725E00007A7A42 /* LoginForm.swift in Sources */,
 				E925A78C2A726235007A7A42 /* User.swift in Sources */,
 				E925A7A72A726385007A7A42 /* ButtonStyles.swift in Sources */,
+				E90B3F2C2A78EE1100418AE0 /* Localizable.swift in Sources */,
+				E90B3F302A78EE4C00418AE0 /* ApiError.swift in Sources */,
 				E925A7A32A72634E007A7A42 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,9 +678,11 @@
 				E90B3F1C2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
 				E925A74D2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
 				E925A7982A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E90B3F2D2A78EE1100418AE0 /* Localizable.swift in Sources */,
 				E925A7662A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A7592A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
 				E925A7A42A72634E007A7A42 /* UserView.swift in Sources */,
+				E90B3F312A78EE4C00418AE0 /* ApiError.swift in Sources */,
 				E90B3F0B2A77D96700418AE0 /* EpisodeDao.swift in Sources */,
 				E90B3F052A77D70D00418AE0 /* Info.swift in Sources */,
 				E978F19B2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift in Sources */,
