@@ -20,6 +20,9 @@ type_name:
   max_length: # warning and error
     warning: 40
     error: 50
+  excluded: # excluded via string array
+    - T
+    - U
 identifier_name:
   min_length: 2 # only warning
   max_length: # warning and error
@@ -29,3 +32,5 @@ identifier_name:
     - id
     - URL
     - GlobalAPIKey
+    - T
+    - U

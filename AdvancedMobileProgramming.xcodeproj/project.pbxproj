@@ -43,6 +43,17 @@
 		E90B3F2F2A78EE4C00418AE0 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */; };
 		E90B3F302A78EE4C00418AE0 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */; };
 		E90B3F312A78EE4C00418AE0 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */; };
+		E90B3F342A821E9400418AE0 /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F332A821E9400418AE0 /* ApiRepository.swift */; };
+		E90B3F352A821E9400418AE0 /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F332A821E9400418AE0 /* ApiRepository.swift */; };
+		E90B3F362A821E9400418AE0 /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F332A821E9400418AE0 /* ApiRepository.swift */; };
+		E90B3F3A2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */; };
+		E90B3F3B2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */; };
+		E90B3F3C2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */; };
+		E90B3F3F2A822D6A00418AE0 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F3E2A822D6A00418AE0 /* Episode.swift */; };
+		E90B3F422A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F412A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift */; };
+		E90B3F452A8230F400418AE0 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F442A8230F400418AE0 /* EpisodeViewModel.swift */; };
+		E90B3F482A8231DC00418AE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F472A8231DC00418AE0 /* HomeView.swift */; };
+		E90B3F4C2A82327600418AE0 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F4B2A82327600418AE0 /* EpisodeView.swift */; };
 		E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */; };
 		E925A7392A725891007A7A42 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E925A7382A725891007A7A42 /* FirebaseAnalytics */; };
 		E925A73B2A725891007A7A42 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E925A73A2A725891007A7A42 /* FirebaseAuth */; };
@@ -136,6 +147,13 @@
 		E90B3F1D2A77DD1100418AE0 /* CharacterDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDao.swift; sourceTree = "<group>"; };
 		E90B3F2A2A78EE1100418AE0 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		E90B3F2E2A78EE4C00418AE0 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		E90B3F332A821E9400418AE0 /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeApiRepositoryImpl.swift; sourceTree = "<group>"; };
+		E90B3F3E2A822D6A00418AE0 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		E90B3F412A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEpisodeFromApiUseCase.swift; sourceTree = "<group>"; };
+		E90B3F442A8230F400418AE0 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		E90B3F472A8231DC00418AE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E90B3F4B2A82327600418AE0 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		E925A7412A72599A007A7A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E925A7452A7259F5007A7A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -204,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				E925A78A2A726235007A7A42 /* User.swift */,
+				E90B3F3E2A822D6A00418AE0 /* Episode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,6 +278,31 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		E90B3F322A821E0D00418AE0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3F382A82206900418AE0 /* Episode */,
+				E90B3F332A821E9400418AE0 /* ApiRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E90B3F382A82206900418AE0 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
+		E90B3F4A2A82326D00418AE0 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				E90B3F4B2A82327600418AE0 /* EpisodeView.swift */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
 		E925A72B2A7169A8007A7A42 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +334,7 @@
 		E925A7352A725616007A7A42 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E90B3F322A821E0D00418AE0 /* Repository */,
 				E90B3F272A78EDEE00418AE0 /* Protocol */,
 				E925A74F2A725ADC007A7A42 /* Use Case */,
 				E925A7362A725621007A7A42 /* Model */,
@@ -314,6 +359,7 @@
 			children = (
 				E925A7502A725AF8007A7A42 /* GetGoogleUserUseCase.swift */,
 				E925A75B2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift */,
+				E90B3F412A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -342,6 +388,7 @@
 			children = (
 				E925A7632A725D94007A7A42 /* AuthenticationViewModel.swift */,
 				E925A78F2A726269007A7A42 /* UserViewModel.swift */,
+				E90B3F442A8230F400418AE0 /* EpisodeViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -349,9 +396,11 @@
 		E925A7682A725DDA007A7A42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E90B3F4A2A82326D00418AE0 /* Episode */,
 				E925A7942A7262B2007A7A42 /* User */,
 				E925A7792A725FF8007A7A42 /* Helper */,
 				E925A7692A725DE5007A7A42 /* Login */,
+				E90B3F472A8231DC00418AE0 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -607,16 +656,21 @@
 			files = (
 				E925A78B2A726235007A7A42 /* User.swift in Sources */,
 				E925A7512A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
+				E90B3F422A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift in Sources */,
 				E925A7752A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E925A7A22A72634E007A7A42 /* UserView.swift in Sources */,
 				E90B3F1A2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
+				E90B3F452A8230F400418AE0 /* EpisodeViewModel.swift in Sources */,
 				E925A7472A725A30007A7A42 /* AppDelegate.swift in Sources */,
 				E90B3EFF2A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E90B3F132A77DBC500418AE0 /* LocationDao.swift in Sources */,
+				E90B3F4C2A82327600418AE0 /* EpisodeView.swift in Sources */,
 				E925A75C2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
 				E925A7902A726269007A7A42 /* UserViewModel.swift in Sources */,
 				E925A7572A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
 				E90B3F0E2A77DADC00418AE0 /* LocationApi.swift in Sources */,
+				E90B3F342A821E9400418AE0 /* ApiRepository.swift in Sources */,
+				E90B3F3F2A822D6A00418AE0 /* Episode.swift in Sources */,
 				E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */,
 				E925A7A62A726385007A7A42 /* ButtonStyles.swift in Sources */,
 				E925A7862A726178007A7A42 /* LoginView.swift in Sources */,
@@ -628,9 +682,11 @@
 				E925A74B2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
 				E90B3F1E2A77DD1100418AE0 /* CharacterDao.swift in Sources */,
 				E925A7962A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E90B3F482A8231DC00418AE0 /* HomeView.swift in Sources */,
 				E90B3F2F2A78EE4C00418AE0 /* ApiError.swift in Sources */,
 				E90B3F092A77D96700418AE0 /* EpisodeDao.swift in Sources */,
 				E90B3F2B2A78EE1100418AE0 /* Localizable.swift in Sources */,
+				E90B3F3A2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */,
 				E978F1802A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -659,8 +715,10 @@
 				E925A7872A726178007A7A42 /* LoginView.swift in Sources */,
 				E90B3F0F2A77DADC00418AE0 /* LocationApi.swift in Sources */,
 				E925A76C2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E90B3F352A821E9400418AE0 /* ApiRepository.swift in Sources */,
 				E925A78C2A726235007A7A42 /* User.swift in Sources */,
 				E925A7A72A726385007A7A42 /* ButtonStyles.swift in Sources */,
+				E90B3F3B2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */,
 				E90B3F2C2A78EE1100418AE0 /* Localizable.swift in Sources */,
 				E90B3F302A78EE4C00418AE0 /* ApiError.swift in Sources */,
 				E925A7A32A72634E007A7A42 /* UserView.swift in Sources */,
@@ -683,11 +741,13 @@
 				E925A7592A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
 				E925A7A42A72634E007A7A42 /* UserView.swift in Sources */,
 				E90B3F312A78EE4C00418AE0 /* ApiError.swift in Sources */,
+				E90B3F3C2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */,
 				E90B3F0B2A77D96700418AE0 /* EpisodeDao.swift in Sources */,
 				E90B3F052A77D70D00418AE0 /* Info.swift in Sources */,
 				E978F19B2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift in Sources */,
 				E925A76D2A725E00007A7A42 /* LoginForm.swift in Sources */,
 				E90B3F202A77DD1100418AE0 /* CharacterDao.swift in Sources */,
+				E90B3F362A821E9400418AE0 /* ApiRepository.swift in Sources */,
 				E90B3F012A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E925A78D2A726235007A7A42 /* User.swift in Sources */,

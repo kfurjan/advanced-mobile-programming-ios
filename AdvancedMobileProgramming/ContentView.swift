@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         switch viewModel.state {
-        case .signedIn: UserView()
+        case .signedIn: HomeView()
                 .transition(.moveAndFade)
         case .signedOut: LoginView()
                 .transition(.moveAndFade)
