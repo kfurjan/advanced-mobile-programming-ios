@@ -6,15 +6,18 @@
 //
 
 import Foundation
+import RealmSwift
 
 @MainActor
 final class EpisodeViewModel: ObservableObject {
 
     private let _getEpisodeFromApiUseCase = GetEpisodeFromApiUseCase()
-
-    var page: Int = 1
+    private let _episodeDaoRepository = EpisodeDaoRepositoryImpl()
 
     @Published private(set) var episodes: [Episode] = []
+
+    @UserDefault(UserDefaultStrings.episodePage, defaultValue: 1)
+    private var page: Int
 
     init() {
         fetchAllEpisodes()
@@ -24,9 +27,10 @@ final class EpisodeViewModel: ObservableObject {
         Task {
             switch await _getEpisodeFromApiUseCase.getAllEpisodes(page: self.page) {
             case .success(let episodes):
-                self.episodes.append(contentsOf: episodes)
+                _episodeDaoRepository.writeAll(objects: episodes.map(EpisodeDao.toDaoObject))
+                self.episodes = _episodeDaoRepository.readAll().map(EpisodeDao.toGeneralObject)
             case .failure(let apiError):
-                print(apiError)
+                print(apiError)  // TODO: show ApiError on the UI
             }
         }
     }

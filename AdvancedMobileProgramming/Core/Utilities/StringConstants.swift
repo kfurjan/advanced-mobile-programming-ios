@@ -28,3 +28,11 @@ enum ApiEndpoints {
     static let location = "\(httpType)://\(hostname)/\(apiVersion)/location"
     static let character = "\(httpType)://\(hostname)/\(apiVersion)/character"
 }
+
+// MARK: UserDefaultStrings
+
+enum UserDefaultStrings {
+    static let episodePage = "episodePage"
+    static let locationPage = "locationPage"
+    static let characterPage = "characterPage"
+}

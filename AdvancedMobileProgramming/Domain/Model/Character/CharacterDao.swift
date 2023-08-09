@@ -19,8 +19,8 @@ class CharacterDao: Object {
     @Persisted var episode: List<String> = List()
     @Persisted var url: String = ""
     @Persisted var created: String = ""
-    @Persisted var origin: CharacterOriginDao
-    @Persisted var location: CharacterLocationDao
+    @Persisted var origin: CharacterOriginDao? = CharacterOriginDao()
+    @Persisted var location: CharacterLocationDao? = CharacterLocationDao()
 }
 
 // MARK: - CharacterOriginDao
