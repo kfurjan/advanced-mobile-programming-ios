@@ -50,6 +50,25 @@ class EpisodeDao: Object {
         )
     }
 
+    /// Convert ``EpisodeResult`` object to the ``EpisodeDao`` object.
+    ///
+    /// - Parameter episode: ``EpisodeResult`` object to convert.
+    /// - Parameter info: ``Info`` object with additional information.
+    /// - Returns: Converted ``EpisodeDao`` object
+    static func toDaoObject(episode: EpisodeResult, info: Info) -> EpisodeDao {
+        let list = List<String>()
+        list.append(objectsIn: episode.characters)
+
+        return EpisodeDao(
+            id: episode.id,
+            name: episode.name,
+            airDate: episode.airDate,
+            episode: episode.episode,
+            characters: list,
+            nextPageExists: info.next != nil ? true : false
+        )
+    }
+
     /// Convert ``EpisodeDao`` object to the ``Episode`` object.
     ///
     /// - Parameter episode: ``EpisodeDao`` object to convert.

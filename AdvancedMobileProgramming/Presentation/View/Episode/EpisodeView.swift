@@ -7,16 +7,52 @@
 
 import SwiftUI
 
-struct EpisodeView: View {
+struct EpisodeItem: View {
 
-    @ObservedObject var episodeViewModel = EpisodeViewModel()
+    let episode: Episode
+
+    private var episodeStats: String {
+        "\(episode.episode), \(episode.airDate)"
+    }
 
     var body: some View {
-        List(episodeViewModel.episodes, id: \.self) { episode in
+        VStack(alignment: .leading) {
             Text(episode.name)
-                .onAppear {
-                    episodeViewModel.onScrolledAtBottom(episode: episode)
+                .font(.headline)
+                .bold()
+            HStack {
+                Text(episodeStats)
+                    .font(.subheadline)
+            }
+        }
+    }
+}
+
+struct EpisodeView: View {
+
+    @ObservedObject var viewModel = EpisodeViewModel()
+
+    var body: some View {
+        NavigationView {
+            List(viewModel.episodes, id: \.self) { episode in
+                EpisodeItem(episode: episode)
+                    .frame(height: 50)
+                    .onAppear {
+                        withAnimation {
+                            viewModel.onScrolledAtBottom(episode: episode)
+                        }
+                    }
+            }
+            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search episodes...")
+            .onChange(of: viewModel.searchText) { _ in
+                viewModel.onSearch()
+            }
+            .refreshable {
+                withAnimation {
+                    viewModel.onRefresh()
                 }
+            }
+            .navigationTitle("Episodes")
         }
     }
 }

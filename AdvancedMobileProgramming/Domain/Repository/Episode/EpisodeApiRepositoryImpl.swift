@@ -30,7 +30,7 @@ final class EpisodeApiRepositoryImpl: ApiRepository {
                 case .success(let episodeApiList):
                     continuation.resume(returning: episodeApiList)
                 case .failure:
-                    continuation.resume(throwing: ApiError.unableToDetchData)
+                    continuation.resume(throwing: ApiError.unableToFetchData)
                 }
             }
         }
@@ -54,7 +54,7 @@ final class EpisodeApiRepositoryImpl: ApiRepository {
                 case .success(let episode):
                     continuation.resume(returning: episode)
                 case .failure:
-                    continuation.resume(throwing: ApiError.unableToDetchData)
+                    continuation.resume(throwing: ApiError.unableToFetchData)
                 }
             }
         }
@@ -78,7 +78,7 @@ final class EpisodeApiRepositoryImpl: ApiRepository {
                 case .success(let episode):
                     continuation.resume(returning: episode)
                 case .failure:
-                    continuation.resume(throwing: ApiError.unableToDetchData)
+                    continuation.resume(throwing: ApiError.unableToFetchData)
                 }
             }
         }

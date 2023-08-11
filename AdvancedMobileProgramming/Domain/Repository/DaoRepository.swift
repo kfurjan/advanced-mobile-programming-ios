@@ -22,4 +22,15 @@ protocol DaoRepository {
     ///
     /// - Parameter objects: list of generic `T` objects to write to the database.
     func writeAll(objects: [T])
+
+    /// Delete all objects of object `T` from the database.
+    ///
+    func deleteAll()
+
+
+    /// Read all objects from database that satisfy `term` parameter.
+    ///
+    /// - Parameter term: term to search for in the database.
+    /// - Returns: list of generic `T` objects.
+    func read(where term: String) -> [T]
 }

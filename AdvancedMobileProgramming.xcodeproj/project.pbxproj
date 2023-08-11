@@ -50,7 +50,6 @@
 		E90B3F3B2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */; };
 		E90B3F3C2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */; };
 		E90B3F3F2A822D6A00418AE0 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F3E2A822D6A00418AE0 /* Episode.swift */; };
-		E90B3F422A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F412A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift */; };
 		E90B3F452A8230F400418AE0 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F442A8230F400418AE0 /* EpisodeViewModel.swift */; };
 		E90B3F482A8231DC00418AE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F472A8231DC00418AE0 /* HomeView.swift */; };
 		E90B3F4C2A82327600418AE0 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B3F4B2A82327600418AE0 /* EpisodeView.swift */; };
@@ -119,6 +118,12 @@
 		E9E2063E2A8282EB00AEDC96 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2063D2A8282EB00AEDC96 /* PropertyWrappers.swift */; };
 		E9E206422A82869C00AEDC96 /* DaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206412A82869C00AEDC96 /* DaoRepository.swift */; };
 		E9E206442A82878A00AEDC96 /* EpisodeDaoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206432A82878A00AEDC96 /* EpisodeDaoRepositoryImpl.swift */; };
+		E9E206492A837D0A00AEDC96 /* PagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206482A837D0A00AEDC96 /* PagingSource.swift */; };
+		E9E2064A2A837D0A00AEDC96 /* PagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206482A837D0A00AEDC96 /* PagingSource.swift */; };
+		E9E2064B2A837D0A00AEDC96 /* PagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206482A837D0A00AEDC96 /* PagingSource.swift */; };
+		E9E2064F2A83808200AEDC96 /* EpisodePagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2064E2A83808200AEDC96 /* EpisodePagingSource.swift */; };
+		E9E206502A83808200AEDC96 /* EpisodePagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2064E2A83808200AEDC96 /* EpisodePagingSource.swift */; };
+		E9E206512A83808200AEDC96 /* EpisodePagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2064E2A83808200AEDC96 /* EpisodePagingSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,7 +158,6 @@
 		E90B3F332A821E9400418AE0 /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
 		E90B3F392A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeApiRepositoryImpl.swift; sourceTree = "<group>"; };
 		E90B3F3E2A822D6A00418AE0 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		E90B3F412A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEpisodeFromApiUseCase.swift; sourceTree = "<group>"; };
 		E90B3F442A8230F400418AE0 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 		E90B3F472A8231DC00418AE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E90B3F4B2A82327600418AE0 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 		E9E2063D2A8282EB00AEDC96 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		E9E206412A82869C00AEDC96 /* DaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoRepository.swift; sourceTree = "<group>"; };
 		E9E206432A82878A00AEDC96 /* EpisodeDaoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDaoRepositoryImpl.swift; sourceTree = "<group>"; };
+		E9E206482A837D0A00AEDC96 /* PagingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingSource.swift; sourceTree = "<group>"; };
+		E9E2064E2A83808200AEDC96 /* EpisodePagingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePagingSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +349,7 @@
 		E925A7352A725616007A7A42 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E9E206472A837C6C00AEDC96 /* Paging */,
 				E90B3F322A821E0D00418AE0 /* Repository */,
 				E90B3F272A78EDEE00418AE0 /* Protocol */,
 				E925A74F2A725ADC007A7A42 /* Use Case */,
@@ -368,7 +375,6 @@
 			children = (
 				E925A7502A725AF8007A7A42 /* GetGoogleUserUseCase.swift */,
 				E925A75B2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift */,
-				E90B3F412A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -501,6 +507,23 @@
 				E978F19C2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift */,
 			);
 			path = AdvancedMobileProgrammingUITests;
+			sourceTree = "<group>";
+		};
+		E9E206472A837C6C00AEDC96 /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+				E9E2064D2A83807400AEDC96 /* Episode */,
+				E9E206482A837D0A00AEDC96 /* PagingSource.swift */,
+			);
+			path = Paging;
+			sourceTree = "<group>";
+		};
+		E9E2064D2A83807400AEDC96 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				E9E2064E2A83808200AEDC96 /* EpisodePagingSource.swift */,
+			);
+			path = Episode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -665,8 +688,8 @@
 			files = (
 				E925A78B2A726235007A7A42 /* User.swift in Sources */,
 				E925A7512A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
-				E90B3F422A822DF700418AE0 /* GetEpisodeFromApiUseCase.swift in Sources */,
 				E925A7752A725F69007A7A42 /* StringConstants.swift in Sources */,
+				E9E206492A837D0A00AEDC96 /* PagingSource.swift in Sources */,
 				E925A7A22A72634E007A7A42 /* UserView.swift in Sources */,
 				E90B3F1A2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
 				E90B3F452A8230F400418AE0 /* EpisodeViewModel.swift in Sources */,
@@ -686,6 +709,7 @@
 				E925A7A62A726385007A7A42 /* ButtonStyles.swift in Sources */,
 				E925A7862A726178007A7A42 /* LoginView.swift in Sources */,
 				E925A76B2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E9E2064F2A83808200AEDC96 /* EpisodePagingSource.swift in Sources */,
 				E90B3F032A77D70D00418AE0 /* Info.swift in Sources */,
 				E925A7AB2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */,
@@ -714,7 +738,9 @@
 				E925A7482A725A30007A7A42 /* AppDelegate.swift in Sources */,
 				E90B3F142A77DBC500418AE0 /* LocationDao.swift in Sources */,
 				E90B3F042A77D70D00418AE0 /* Info.swift in Sources */,
+				E9E206502A83808200AEDC96 /* EpisodePagingSource.swift in Sources */,
 				E925A7762A725F69007A7A42 /* StringConstants.swift in Sources */,
+				E9E2064A2A837D0A00AEDC96 /* PagingSource.swift in Sources */,
 				E925A7972A7262C3007A7A42 /* UserDetailView.swift in Sources */,
 				E925A7652A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A7522A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
@@ -759,6 +785,8 @@
 				E978F19B2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift in Sources */,
 				E925A76D2A725E00007A7A42 /* LoginForm.swift in Sources */,
 				E90B3F202A77DD1100418AE0 /* CharacterDao.swift in Sources */,
+				E9E206512A83808200AEDC96 /* EpisodePagingSource.swift in Sources */,
+				E9E2064B2A837D0A00AEDC96 /* PagingSource.swift in Sources */,
 				E90B3F362A821E9400418AE0 /* ApiRepository.swift in Sources */,
 				E90B3F012A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */,

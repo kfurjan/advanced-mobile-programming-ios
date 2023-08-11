@@ -38,4 +38,27 @@ class EpisodeDaoRepositoryImpl: DaoRepository {
             localRealm!.add(objects, update: .modified)
         }
     }
+
+    /// Delete all objects of object ``EpisodeDao`` from the database.
+    ///
+    func deleteAll() {
+        try! localRealm!.write {
+            let episodes = localRealm!.objects(EpisodeDao.self)
+            localRealm!.delete(episodes)
+        }
+    }
+
+    /// Read all objects from database that satisfy `term` parameter.
+    ///
+    /// - Parameter term: term to search for in the database.
+    /// - Returns: list of ``EpisodeDao`` objects.
+    func read(where term: String) -> [EpisodeDao] {
+        let episodes = localRealm!.objects(EpisodeDao.self)
+
+        let filteredEpisodes = episodes.where { episode in
+            episode.name.contains(term, options: .caseInsensitive)
+        }
+
+        return Array(filteredEpisodes)
+    }
 }
