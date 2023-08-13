@@ -10,13 +10,13 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         TabView {
-            EpisodeView()
+            CharacterView()
                 .transition(.moveAndFade)
                 .tabItem {
                     Label {
-                        Text("Episodes", comment: "Episodes tab item")
+                        Text("Characters", comment: "Characters tab item")
                     } icon: {
-                        Image(systemName: "tv.fill")
+                        Image(systemName: "person.3.fill")
                     }
                 }
             LocationView()
@@ -26,6 +26,15 @@ struct HomeView: View {
                         Text("Locations", comment: "Locations tab item")
                     } icon: {
                         Image(systemName: "location.fill")
+                    }
+                }
+            EpisodeView()
+                .transition(.moveAndFade)
+                .tabItem {
+                    Label {
+                        Text("Episodes", comment: "Episodes tab item")
+                    } icon: {
+                        Image(systemName: "tv.fill")
                     }
                 }
             UserView()

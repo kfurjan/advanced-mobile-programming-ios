@@ -1,5 +1,5 @@
 //
-//  LocationApiRepositoryImpl.swift
+//  CharacterApiRepositoryImpl.swift
 //  AdvancedMobileProgramming
 //
 //  Created by Kevin Furjan on 13.08.2023.
@@ -8,27 +8,27 @@
 import Alamofire
 import Foundation
 
-final class LocationApiRepositoryImpl: ApiRepository {
+final class CharacterApiRepositoryImpl: ApiRepository {
 
-    typealias T = LocationApi
-    typealias U = LocationResult
+    typealias T = CharacterApi
+    typealias U = CharacterResult
 
     /// Generic method that fetches all data from REST API.
     ///
     /// - Parameter page:page of the REST API response.
-    /// - Returns: ``LocationApi`` object.
-    func getAll(page: Int = 1) async throws -> LocationApi {
+    /// - Returns: ``CharacterApi`` object.
+    func getAll(page: Int = 1) async throws -> CharacterApi {
         return try await withCheckedThrowingContinuation { continuation in
             AF.request(
-                "\(ApiEndpoints.location)?page=\(page)",
+                "\(ApiEndpoints.character)?page=\(page)",
                 method: .get,
                 encoding: JSONEncoding.default
             )
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: LocationApi.self) { response in
+            .responseDecodable(of: CharacterApi.self) { response in
                 switch response.result {
-                case .success(let locationApiList):
-                    continuation.resume(returning: locationApiList)
+                case .success(let characterApiList):
+                    continuation.resume(returning: characterApiList)
                 case .failure:
                     continuation.resume(throwing: ApiError.unableToFetchData)
                 }
@@ -40,19 +40,19 @@ final class LocationApiRepositoryImpl: ApiRepository {
     /// based on its ID.
     ///
     /// - Parameter id:ID of the REST API object.
-    /// - Returns: ``LocationResult`` object.
-    func getById(id: Int) async throws -> LocationResult {
+    /// - Returns: ``CharacterResult`` object.
+    func getById(id: Int) async throws -> CharacterResult {
         return try await withCheckedThrowingContinuation { continuation in
             AF.request(
-                "\(ApiEndpoints.location)/\(id)",
+                "\(ApiEndpoints.character)/\(id)",
                 method: .get,
                 encoding: JSONEncoding.default
             )
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: LocationResult.self) { response in
+            .responseDecodable(of: CharacterResult.self) { response in
                 switch response.result {
-                case .success(let location):
-                    continuation.resume(returning: location)
+                case .success(let character):
+                    continuation.resume(returning: character)
                 case .failure:
                     continuation.resume(throwing: ApiError.unableToFetchData)
                 }
@@ -64,8 +64,8 @@ final class LocationApiRepositoryImpl: ApiRepository {
     /// based on its URI.
     ///
     /// - Parameter id:URI of the REST API object.
-    /// - Returns: ``LocationResult`` object.
-    func getByUri(uri: String) async throws -> LocationResult {
+    /// - Returns: ``CharacterResult`` object.
+    func getByUri(uri: String) async throws -> CharacterResult {
         return try await withCheckedThrowingContinuation { continuation in
             AF.request(
                 uri,
@@ -73,10 +73,10 @@ final class LocationApiRepositoryImpl: ApiRepository {
                 encoding: JSONEncoding.default
             )
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: LocationResult.self) { response in
+            .responseDecodable(of: CharacterResult.self) { response in
                 switch response.result {
-                case .success(let location):
-                    continuation.resume(returning: location)
+                case .success(let character):
+                    continuation.resume(returning: character)
                 case .failure:
                     continuation.resume(throwing: ApiError.unableToFetchData)
                 }

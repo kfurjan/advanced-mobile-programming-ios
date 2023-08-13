@@ -51,12 +51,12 @@ final class LocationDaoRepositoryImpl: DaoRepository {
     /// - Parameter term: term to search for in the database.
     /// - Returns: list of ``LocationDao`` objects.
     func read(where term: String) -> [LocationDao] {
-        let episodes = localRealm!.objects(LocationDao.self)
+        let locations = localRealm!.objects(LocationDao.self)
 
-        let filteredEpisodes = episodes.where { episode in
-            episode.name.contains(term, options: .caseInsensitive)
+        let filteredLocations = locations.where { location in
+            location.name.contains(term, options: .caseInsensitive)
         }
 
-        return Array(filteredEpisodes)
+        return Array(filteredLocations)
     }
 }

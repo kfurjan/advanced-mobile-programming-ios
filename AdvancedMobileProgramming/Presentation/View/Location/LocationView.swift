@@ -28,7 +28,6 @@ struct LocationItem: View {
     }
 }
 
-
 struct LocationView: View {
 
     @ObservedObject var viewModel = LocationViewModel()
