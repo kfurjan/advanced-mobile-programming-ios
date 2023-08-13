@@ -10,11 +10,11 @@ import Foundation
 final class EpisodePagingSource: PagingSource {
 
     typealias Repo = EpisodeApiRepositoryImpl
-    typealias DAO = EpisodeDaoRepositoryImpl
+    typealias Dao = EpisodeDaoRepositoryImpl
     typealias Response = Episode
     typealias CustomError = ApiError
 
-    var dao: DAO = EpisodeDaoRepositoryImpl()
+    var dao: Dao = EpisodeDaoRepositoryImpl()
     var restApi: Repo = EpisodeApiRepositoryImpl()
 
     /// Main function which will load data directly from the database (if data exists), or load data from REST API,
@@ -23,8 +23,9 @@ final class EpisodePagingSource: PagingSource {
     /// - Parameters:
     ///   - page: REST API page number
     ///   - loadType: whether it is `initial`, `refresh` or `append` load event.
+    ///
     /// - Returns: Returns list of ``Episode`` objects, ``ApiError`` otherwise.
-    func load(page: Int, loadType: LoadType) async -> Result<[Response], CustomError> {
+    func load(page: Int, loadType: LoadTypeEvent) async -> Result<[Response], CustomError> {
         switch loadType {
         case .initial:
             do {

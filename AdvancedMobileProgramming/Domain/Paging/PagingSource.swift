@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LoadType {
+enum LoadTypeEvent {
     case initial
     case refresh
     case append
@@ -16,11 +16,11 @@ enum LoadType {
 protocol PagingSource {
 
     associatedtype Repo: ApiRepository
-    associatedtype DAO: DaoRepository
+    associatedtype Dao: DaoRepository
     associatedtype Response
     associatedtype CustomError: Error
 
-    var dao: DAO { get }
+    var dao: Dao { get }
     var restApi: Repo { get }
 
     /// Main function which will load data directly from the database (if data exists), or load data from REST API,
@@ -29,6 +29,7 @@ protocol PagingSource {
     /// - Parameters:
     ///   - page: REST API page number
     ///   - loadType: whether it is `initial`, `refresh` or `append` load event.
+    ///
     /// - Returns: Returns list of generic `Response` objects, `CustomError` otherwise.
-    func load(page: Int, loadType: LoadType) async -> Result<[Response], CustomError>
+    func load(page: Int, loadType: LoadTypeEvent) async -> Result<[Response], CustomError>
 }

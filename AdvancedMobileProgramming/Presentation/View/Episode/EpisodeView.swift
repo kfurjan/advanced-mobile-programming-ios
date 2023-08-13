@@ -39,13 +39,17 @@ struct EpisodeView: View {
                     .frame(height: 50)
                     .onAppear {
                         withAnimation {
-                            viewModel.onScrolledAtBottom(episode: episode)
+                            if viewModel.episodes.last == episode {
+                                viewModel.onScrolledAtBottom()
+                            }
                         }
                     }
             }
             .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search episodes...")
             .onChange(of: viewModel.searchText) { _ in
-                viewModel.onSearch()
+                withAnimation {
+                    viewModel.onSearch()
+                }
             }
             .refreshable {
                 withAnimation {

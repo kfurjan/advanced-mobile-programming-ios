@@ -9,10 +9,13 @@ import Foundation
 import RealmSwift
 
 @MainActor
-final class EpisodeViewModel: ObservableObject {
+final class EpisodeViewModel: BaseViewModel {
 
-    private let _paging = EpisodePagingSource()
-    private let _dao = EpisodeDaoRepositoryImpl()
+    typealias Dao = EpisodeDaoRepositoryImpl
+    typealias Paging = EpisodePagingSource
+
+    var dao: Dao = EpisodeDaoRepositoryImpl()
+    var paging: Paging = EpisodePagingSource()
 
     @Published var searchText: String = ""
     @Published private(set) var episodes: [Episode] = []
@@ -21,12 +24,15 @@ final class EpisodeViewModel: ObservableObject {
     private var page: Int
 
     init() {
-        fetchEpisodes(loadType: .initial)
+        fetchData(loadType: .initial)
     }
 
-    func fetchEpisodes(loadType: LoadType) {
+    /// Function which fetches data that will be shown on the UI.
+    ///
+    /// - Parameter loadType: ``LoadTypeEvent`` which defines which data to fetch.
+    func fetchData(loadType: LoadTypeEvent) {
         Task {
-            switch await _paging.load(page: self.page, loadType: loadType) {
+            switch await paging.load(page: self.page, loadType: loadType) {
             case .success(let episodes):
                 self.episodes = episodes
             case .failure(let error):
@@ -34,27 +40,28 @@ final class EpisodeViewModel: ObservableObject {
             }
         }
     }
-
-    func onScrolledAtBottom(episode: Episode) {
-        if self.episodes.last == episode
-            && self.episodes.last?.nextPageExists ?? false
-            && searchText.isEmpty {
+    
+    /// Function that executes when user reaches end of the scrollable ``SwiftUI.List``.
+    func onScrolledAtBottom() {
+        if self.episodes.last?.nextPageExists ?? false && searchText.isEmpty {
             self.page += 1
-            self.fetchEpisodes(loadType: .append)
+            self.fetchData(loadType: .append)
         }
     }
 
+    /// Function that exectues when user refreshes ``SwiftUI.List`` with pull-down-to-refresh action.
     func onRefresh() {
         self.page = 1
         self.searchText = ""
-        self.fetchEpisodes(loadType: .refresh)
+        self.fetchData(loadType: .refresh)
     }
 
+    /// Function that exectues when user searches ``SwiftUI.List``.
     func onSearch() {
         if self.searchText.isEmpty {
-            self.episodes = _dao.readAll().map(EpisodeDao.toGeneralObject)
+            self.episodes = dao.readAll().map(EpisodeDao.toGeneralObject)
         } else {
-            self.episodes = _dao.read(where: searchText).map(EpisodeDao.toGeneralObject)
+            self.episodes = dao.read(where: searchText).map(EpisodeDao.toGeneralObject)
         }
     }
 }
