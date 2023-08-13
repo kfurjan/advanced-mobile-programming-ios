@@ -19,6 +19,15 @@ struct HomeView: View {
                         Image(systemName: "tv.fill")
                     }
                 }
+            LocationView()
+                .transition(.moveAndFade)
+                .tabItem {
+                    Label {
+                        Text("Locations", comment: "Locations tab item")
+                    } icon: {
+                        Image(systemName: "location.fill")
+                    }
+                }
             UserView()
                 .transition(.moveAndFade)
                 .tabItem {

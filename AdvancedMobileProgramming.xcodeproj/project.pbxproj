@@ -127,6 +127,24 @@
 		E9E206562A88C4A000AEDC96 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206552A88C4A000AEDC96 /* BaseViewModel.swift */; };
 		E9E206572A88C4A000AEDC96 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206552A88C4A000AEDC96 /* BaseViewModel.swift */; };
 		E9E206582A88C4A000AEDC96 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206552A88C4A000AEDC96 /* BaseViewModel.swift */; };
+		E9E2065B2A88CF3800AEDC96 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2065A2A88CF3800AEDC96 /* Location.swift */; };
+		E9E2065C2A88CF3800AEDC96 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2065A2A88CF3800AEDC96 /* Location.swift */; };
+		E9E2065D2A88CF3800AEDC96 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2065A2A88CF3800AEDC96 /* Location.swift */; };
+		E9E206612A890F2600AEDC96 /* LocationApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206602A890F2600AEDC96 /* LocationApiRepositoryImpl.swift */; };
+		E9E206622A890F2600AEDC96 /* LocationApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206602A890F2600AEDC96 /* LocationApiRepositoryImpl.swift */; };
+		E9E206632A890F2600AEDC96 /* LocationApiRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206602A890F2600AEDC96 /* LocationApiRepositoryImpl.swift */; };
+		E9E206662A89100200AEDC96 /* LocationDaoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206652A89100200AEDC96 /* LocationDaoRepositoryImpl.swift */; };
+		E9E206672A89100200AEDC96 /* LocationDaoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206652A89100200AEDC96 /* LocationDaoRepositoryImpl.swift */; };
+		E9E206682A89100200AEDC96 /* LocationDaoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206652A89100200AEDC96 /* LocationDaoRepositoryImpl.swift */; };
+		E9E2066C2A89110200AEDC96 /* LocationPagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2066B2A89110200AEDC96 /* LocationPagingSource.swift */; };
+		E9E2066D2A89110200AEDC96 /* LocationPagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2066B2A89110200AEDC96 /* LocationPagingSource.swift */; };
+		E9E2066E2A89110200AEDC96 /* LocationPagingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2066B2A89110200AEDC96 /* LocationPagingSource.swift */; };
+		E9E206712A89120D00AEDC96 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206702A89120D00AEDC96 /* LocationViewModel.swift */; };
+		E9E206722A89120D00AEDC96 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206702A89120D00AEDC96 /* LocationViewModel.swift */; };
+		E9E206732A89120D00AEDC96 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206702A89120D00AEDC96 /* LocationViewModel.swift */; };
+		E9E206772A89133100AEDC96 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206762A89133100AEDC96 /* LocationView.swift */; };
+		E9E206782A89133100AEDC96 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206762A89133100AEDC96 /* LocationView.swift */; };
+		E9E206792A89133100AEDC96 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206762A89133100AEDC96 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +216,12 @@
 		E9E206482A837D0A00AEDC96 /* PagingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingSource.swift; sourceTree = "<group>"; };
 		E9E2064E2A83808200AEDC96 /* EpisodePagingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePagingSource.swift; sourceTree = "<group>"; };
 		E9E206552A88C4A000AEDC96 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E9E2065A2A88CF3800AEDC96 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E9E206602A890F2600AEDC96 /* LocationApiRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApiRepositoryImpl.swift; sourceTree = "<group>"; };
+		E9E206652A89100200AEDC96 /* LocationDaoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDaoRepositoryImpl.swift; sourceTree = "<group>"; };
+		E9E2066B2A89110200AEDC96 /* LocationPagingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPagingSource.swift; sourceTree = "<group>"; };
+		E9E206702A89120D00AEDC96 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		E9E206762A89133100AEDC96 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +263,7 @@
 			children = (
 				E925A78A2A726235007A7A42 /* User.swift */,
 				E90B3F3E2A822D6A00418AE0 /* Episode.swift */,
+				E9E2065A2A88CF3800AEDC96 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +322,7 @@
 		E90B3F322A821E0D00418AE0 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				E9E2065F2A890EE400AEDC96 /* Location */,
 				E90B3F382A82206900418AE0 /* Episode */,
 				E90B3F332A821E9400418AE0 /* ApiRepository.swift */,
 				E9E206412A82869C00AEDC96 /* DaoRepository.swift */,
@@ -409,6 +435,7 @@
 				E925A78F2A726269007A7A42 /* UserViewModel.swift */,
 				E90B3F442A8230F400418AE0 /* EpisodeViewModel.swift */,
 				E9E206552A88C4A000AEDC96 /* BaseViewModel.swift */,
+				E9E206702A89120D00AEDC96 /* LocationViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -416,6 +443,7 @@
 		E925A7682A725DDA007A7A42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9E206752A89131D00AEDC96 /* Location */,
 				E90B3F4A2A82326D00418AE0 /* Episode */,
 				E925A7942A7262B2007A7A42 /* User */,
 				E925A7792A725FF8007A7A42 /* Helper */,
@@ -517,6 +545,7 @@
 		E9E206472A837C6C00AEDC96 /* Paging */ = {
 			isa = PBXGroup;
 			children = (
+				E9E2066A2A8910F300AEDC96 /* Location */,
 				E9E2064D2A83807400AEDC96 /* Episode */,
 				E9E206482A837D0A00AEDC96 /* PagingSource.swift */,
 			);
@@ -529,6 +558,31 @@
 				E9E2064E2A83808200AEDC96 /* EpisodePagingSource.swift */,
 			);
 			path = Episode;
+			sourceTree = "<group>";
+		};
+		E9E2065F2A890EE400AEDC96 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E9E206602A890F2600AEDC96 /* LocationApiRepositoryImpl.swift */,
+				E9E206652A89100200AEDC96 /* LocationDaoRepositoryImpl.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		E9E2066A2A8910F300AEDC96 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E9E2066B2A89110200AEDC96 /* LocationPagingSource.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		E9E206752A89131D00AEDC96 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				E9E206762A89133100AEDC96 /* LocationView.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -693,10 +747,12 @@
 			files = (
 				E925A78B2A726235007A7A42 /* User.swift in Sources */,
 				E925A7512A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
+				E9E2065B2A88CF3800AEDC96 /* Location.swift in Sources */,
 				E925A7752A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E9E206492A837D0A00AEDC96 /* PagingSource.swift in Sources */,
 				E925A7A22A72634E007A7A42 /* UserView.swift in Sources */,
 				E90B3F1A2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
+				E9E206772A89133100AEDC96 /* LocationView.swift in Sources */,
 				E90B3F452A8230F400418AE0 /* EpisodeViewModel.swift in Sources */,
 				E925A7472A725A30007A7A42 /* AppDelegate.swift in Sources */,
 				E90B3EFF2A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
@@ -713,16 +769,20 @@
 				E925A7332A716AE1007A7A42 /* UIApplicationExtensions.swift in Sources */,
 				E9E206562A88C4A000AEDC96 /* BaseViewModel.swift in Sources */,
 				E925A7A62A726385007A7A42 /* ButtonStyles.swift in Sources */,
+				E9E206662A89100200AEDC96 /* LocationDaoRepositoryImpl.swift in Sources */,
 				E925A7862A726178007A7A42 /* LoginView.swift in Sources */,
 				E925A76B2A725E00007A7A42 /* LoginForm.swift in Sources */,
 				E9E2064F2A83808200AEDC96 /* EpisodePagingSource.swift in Sources */,
+				E9E206712A89120D00AEDC96 /* LocationViewModel.swift in Sources */,
 				E90B3F032A77D70D00418AE0 /* Info.swift in Sources */,
 				E925A7AB2A7263B6007A7A42 /* Transitions.swift in Sources */,
+				E9E2066C2A89110200AEDC96 /* LocationPagingSource.swift in Sources */,
 				E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */,
 				E925A7642A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A74B2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
 				E90B3F1E2A77DD1100418AE0 /* CharacterDao.swift in Sources */,
 				E925A7962A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E9E206612A890F2600AEDC96 /* LocationApiRepositoryImpl.swift in Sources */,
 				E9E2063E2A8282EB00AEDC96 /* PropertyWrappers.swift in Sources */,
 				E90B3F482A8231DC00418AE0 /* HomeView.swift in Sources */,
 				E90B3F2F2A78EE4C00418AE0 /* ApiError.swift in Sources */,
@@ -748,16 +808,21 @@
 				E925A7762A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E9E2064A2A837D0A00AEDC96 /* PagingSource.swift in Sources */,
 				E925A7972A7262C3007A7A42 /* UserDetailView.swift in Sources */,
+				E9E2066D2A89110200AEDC96 /* LocationPagingSource.swift in Sources */,
 				E9E206572A88C4A000AEDC96 /* BaseViewModel.swift in Sources */,
 				E925A7652A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A7522A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
+				E9E206622A890F2600AEDC96 /* LocationApiRepositoryImpl.swift in Sources */,
 				E925A7582A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
 				E90B3F1F2A77DD1100418AE0 /* CharacterDao.swift in Sources */,
+				E9E206722A89120D00AEDC96 /* LocationViewModel.swift in Sources */,
+				E9E206672A89100200AEDC96 /* LocationDaoRepositoryImpl.swift in Sources */,
 				E925A75D2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
 				E90B3F002A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E978F1912A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift in Sources */,
 				E925A7AC2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E925A7872A726178007A7A42 /* LoginView.swift in Sources */,
+				E9E206782A89133100AEDC96 /* LocationView.swift in Sources */,
 				E90B3F0F2A77DADC00418AE0 /* LocationApi.swift in Sources */,
 				E925A76C2A725E00007A7A42 /* LoginForm.swift in Sources */,
 				E90B3F352A821E9400418AE0 /* ApiRepository.swift in Sources */,
@@ -765,6 +830,7 @@
 				E925A7A72A726385007A7A42 /* ButtonStyles.swift in Sources */,
 				E90B3F3B2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */,
 				E90B3F2C2A78EE1100418AE0 /* Localizable.swift in Sources */,
+				E9E2065C2A88CF3800AEDC96 /* Location.swift in Sources */,
 				E90B3F302A78EE4C00418AE0 /* ApiError.swift in Sources */,
 				E925A7A32A72634E007A7A42 /* UserView.swift in Sources */,
 			);
@@ -776,16 +842,20 @@
 			files = (
 				E925A75E2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
 				E925A7492A725A30007A7A42 /* AppDelegate.swift in Sources */,
+				E9E2065D2A88CF3800AEDC96 /* Location.swift in Sources */,
 				E978F19D2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift in Sources */,
 				E90B3F102A77DADC00418AE0 /* LocationApi.swift in Sources */,
 				E90B3F1C2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
 				E925A74D2A725AA7007A7A42 /* GIDConfigurationExtensions.swift in Sources */,
+				E9E206732A89120D00AEDC96 /* LocationViewModel.swift in Sources */,
 				E925A7982A7262C3007A7A42 /* UserDetailView.swift in Sources */,
 				E90B3F2D2A78EE1100418AE0 /* Localizable.swift in Sources */,
 				E925A7662A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A7592A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
+				E9E206682A89100200AEDC96 /* LocationDaoRepositoryImpl.swift in Sources */,
 				E925A7A42A72634E007A7A42 /* UserView.swift in Sources */,
 				E90B3F312A78EE4C00418AE0 /* ApiError.swift in Sources */,
+				E9E206792A89133100AEDC96 /* LocationView.swift in Sources */,
 				E90B3F3C2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */,
 				E9E206582A88C4A000AEDC96 /* BaseViewModel.swift in Sources */,
 				E90B3F0B2A77D96700418AE0 /* EpisodeDao.swift in Sources */,
@@ -798,9 +868,11 @@
 				E90B3F362A821E9400418AE0 /* ApiRepository.swift in Sources */,
 				E90B3F012A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */,
+				E9E206632A890F2600AEDC96 /* LocationApiRepositoryImpl.swift in Sources */,
 				E925A78D2A726235007A7A42 /* User.swift in Sources */,
 				E925A7922A726269007A7A42 /* UserViewModel.swift in Sources */,
 				E925A7882A726178007A7A42 /* LoginView.swift in Sources */,
+				E9E2066E2A89110200AEDC96 /* LocationPagingSource.swift in Sources */,
 				E925A7A82A726385007A7A42 /* ButtonStyles.swift in Sources */,
 				E925A7772A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E925A7532A725AF8007A7A42 /* GetGoogleUserUseCase.swift in Sources */,
