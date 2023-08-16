@@ -60,4 +60,8 @@ final class EpisodeViewModel: BaseViewModel {
             self.episodes = dao.read(where: searchText).map(EpisodeDao.toGeneralObject)
         }
     }
+
+    func onItemClicked(id: Int) -> EpisodeDetail {
+        dao.read(where: id)
+    }
 }

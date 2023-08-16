@@ -6,6 +6,74 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
+
+struct EpisodeDetailView: View {
+
+    let episode: EpisodeDetail
+
+    private var episodeStats: String {
+        "\(episode.episode), \(episode.airDate)"
+    }
+
+    var body: some View {
+        VStack {
+            VStack(alignment: .leading, spacing: 3) {
+                HStack {
+                    Text("Episode name")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+
+                HStack {
+                    Text(episode.name)
+                        .font(.body)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+            }
+            .padding([.top])
+
+            VStack(alignment: .leading, spacing: 3) {
+                HStack {
+                    Text("Air date")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+
+                HStack {
+                    Text(episodeStats)
+                        .font(.body)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+            }
+            .padding([.top])
+
+            VStack(alignment: .leading, spacing: 3) {
+                HStack {
+                    Text("Characters")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+
+                List(episode.characters, id: \.self) { character in
+                    CharacterItem(character: character)
+                        .frame(height: 50)
+                }
+            }
+            .padding([.top])
+        }
+        .navigationTitle(episode.name)
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
 
 struct EpisodeItem: View {
 
@@ -35,13 +103,15 @@ struct EpisodeView: View {
     var body: some View {
         NavigationView {
             List(viewModel.episodes, id: \.self) { episode in
-                EpisodeItem(episode: episode)
-                    .frame(height: 50)
-                    .onAppear {
-                        if viewModel.episodes.last == episode {
-                            viewModel.onScrolledAtBottom()
+                NavigationLink(destination: EpisodeDetailView(episode: viewModel.onItemClicked(id: episode.id))) {
+                    EpisodeItem(episode: episode)
+                        .frame(height: 50)
+                        .onAppear {
+                            if viewModel.episodes.last == episode {
+                                viewModel.onScrolledAtBottom()
+                            }
                         }
-                    }
+                }
             }
             .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search episodes...")
             .onChange(of: viewModel.searchText) { _ in
