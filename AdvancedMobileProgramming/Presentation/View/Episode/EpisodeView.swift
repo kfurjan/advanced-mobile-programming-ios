@@ -38,25 +38,22 @@ struct EpisodeView: View {
                 EpisodeItem(episode: episode)
                     .frame(height: 50)
                     .onAppear {
-                        withAnimation {
-                            if viewModel.episodes.last == episode {
-                                viewModel.onScrolledAtBottom()
-                            }
+                        if viewModel.episodes.last == episode {
+                            viewModel.onScrolledAtBottom()
                         }
                     }
             }
             .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search episodes...")
             .onChange(of: viewModel.searchText) { _ in
-                withAnimation {
-                    viewModel.onSearch()
-                }
+                viewModel.onSearch()
             }
             .refreshable {
-                withAnimation {
-                    viewModel.onRefresh()
-                }
+                viewModel.onRefresh()
             }
             .navigationTitle("Episodes")
+        }
+        .onAppear {
+            viewModel.fetchData(loadType: .initial)
         }
     }
 }

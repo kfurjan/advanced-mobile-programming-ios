@@ -169,6 +169,7 @@
 		E9E206A72A89428200AEDC96 /* FilterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206A62A89428200AEDC96 /* FilterRowView.swift */; };
 		E9E206A82A89428200AEDC96 /* FilterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206A62A89428200AEDC96 /* FilterRowView.swift */; };
 		E9E206A92A89428200AEDC96 /* FilterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206A62A89428200AEDC96 /* FilterRowView.swift */; };
+		E9E206AD2A8BFE5200AEDC96 /* CollectionConcurrencyKit in Frameworks */ = {isa = PBXBuildFile; productRef = E9E206AC2A8BFE5200AEDC96 /* CollectionConcurrencyKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E925A79C2A726315007A7A42 /* SDWebImageSwiftUI in Frameworks */,
+				E9E206AD2A8BFE5200AEDC96 /* CollectionConcurrencyKit in Frameworks */,
 				E90B3EF72A77957700418AE0 /* Alamofire in Frameworks */,
 				E925A7822A726126007A7A42 /* LottieSwiftUI in Frameworks */,
 				E90B3EFD2A7796ED00418AE0 /* RealmSwift in Frameworks */,
@@ -676,6 +678,7 @@
 				E90B3EF62A77957700418AE0 /* Alamofire */,
 				E90B3EFA2A7796ED00418AE0 /* Realm */,
 				E90B3EFC2A7796ED00418AE0 /* RealmSwift */,
+				E9E206AC2A8BFE5200AEDC96 /* CollectionConcurrencyKit */,
 			);
 			productName = AdvancedMobileProgramming;
 			productReference = E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */;
@@ -757,6 +760,7 @@
 				E925A79A2A726315007A7A42 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				E90B3EF52A77957700418AE0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				E90B3EF92A7796ED00418AE0 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				E9E206AB2A8BFE5100AEDC96 /* XCRemoteSwiftPackageReference "CollectionConcurrencyKit" */,
 			);
 			productRefGroup = E978F17D2A6EC0CE0065172A /* Products */;
 			projectDirPath = "";
@@ -1338,6 +1342,14 @@
 				minimumVersion = 0.52.4;
 			};
 		};
+		E9E206AB2A8BFE5100AEDC96 /* XCRemoteSwiftPackageReference "CollectionConcurrencyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/CollectionConcurrencyKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1390,6 +1402,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E978F1AE2A6EC5570065172A /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */;
 			productName = "plugin:SwiftLint";
+		};
+		E9E206AC2A8BFE5200AEDC96 /* CollectionConcurrencyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9E206AB2A8BFE5100AEDC96 /* XCRemoteSwiftPackageReference "CollectionConcurrencyKit" */;
+			productName = CollectionConcurrencyKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

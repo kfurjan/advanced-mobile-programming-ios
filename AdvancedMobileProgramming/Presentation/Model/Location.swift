@@ -12,6 +12,7 @@ struct Location: Hashable {
     let name: String
     let type: String
     let dimension: String
+    let url: String
     let residents: [String]
     let nextPageExists: Bool
 }

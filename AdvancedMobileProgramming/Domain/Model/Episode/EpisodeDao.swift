@@ -12,6 +12,7 @@ class EpisodeDao: Object {
     @Persisted var name: String = ""
     @Persisted var airDate: String = ""
     @Persisted var episode: String = ""
+    @Persisted var url: String = ""
     @Persisted var characters: List<String> = List()
     @Persisted var nextPageExists: Bool = false
 
@@ -20,6 +21,7 @@ class EpisodeDao: Object {
       name: String,
       airDate: String,
       episode: String,
+      url: String,
       characters: List<String>,
       nextPageExists: Bool
     ) {
@@ -28,6 +30,7 @@ class EpisodeDao: Object {
         self.name = name
         self.airDate = airDate
         self.episode = episode
+        self.url = url
         self.characters = characters
         self.nextPageExists = nextPageExists
     }
@@ -45,6 +48,7 @@ class EpisodeDao: Object {
             name: episode.name,
             airDate: episode.airDate,
             episode: episode.episode,
+            url: episode.url,
             characters: list,
             nextPageExists: episode.nextPageExists
         )
@@ -64,6 +68,7 @@ class EpisodeDao: Object {
             name: episode.name,
             airDate: episode.airDate,
             episode: episode.episode,
+            url: episode.url,
             characters: list,
             nextPageExists: info.next != nil ? true : false
         )
@@ -79,6 +84,7 @@ class EpisodeDao: Object {
             name: episode.name,
             airDate: episode.airDate,
             episode: episode.episode,
+            url: episode.url,
             characters: Array(episode.characters),
             nextPageExists: episode.nextPageExists
         )

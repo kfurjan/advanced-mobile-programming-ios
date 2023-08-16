@@ -18,5 +18,6 @@ struct Character: Hashable {
     let episode: [String]
     let origin: String
     let location: String
+    let url: String
     let nextPageExists: Bool
 }

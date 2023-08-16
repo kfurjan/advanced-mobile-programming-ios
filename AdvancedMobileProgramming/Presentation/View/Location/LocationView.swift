@@ -12,7 +12,13 @@ struct LocationItem: View {
     let location: Location
 
     private var locationStats: String {
-        "\(location.dimension), \(location.type)"
+        if location.dimension.isEmpty {
+            return location.type
+        } else if location.type.isEmpty {
+            return location.dimension
+        } else {
+            return "\(location.dimension), \(location.type)"
+        }
     }
 
     var body: some View {
@@ -57,6 +63,9 @@ struct LocationView: View {
                 }
             }
             .navigationTitle("Locations")
+        }
+        .onAppear {
+            viewModel.fetchData(loadType: .initial)
         }
     }
 }

@@ -23,10 +23,6 @@ final class EpisodeViewModel: BaseViewModel {
     @UserDefault(UserDefaultStrings.episodePage, defaultValue: 1)
     private var page: Int
 
-    init() {
-        fetchData(loadType: .initial)
-    }
-
     /// Function which fetches data that will be shown on the UI.
     ///
     /// - Parameter loadType: ``LoadTypeEvent`` which defines which data to fetch.
@@ -40,7 +36,7 @@ final class EpisodeViewModel: BaseViewModel {
             }
         }
     }
-    
+
     /// Function that executes when user reaches end of the scrollable ``SwiftUI.List``.
     func onScrolledAtBottom() {
         if self.episodes.last?.nextPageExists ?? false && searchText.isEmpty {

@@ -22,10 +22,6 @@ final class LocationViewModel: BaseViewModel {
     @UserDefault(UserDefaultStrings.locationPage, defaultValue: 1)
     private var page: Int
 
-    init() {
-        fetchData(loadType: .initial)
-    }
-
     /// Function which fetches data that will be shown on the UI.
     ///
     /// - Parameter loadType: ``LoadTypeEvent`` which defines which data to fetch.

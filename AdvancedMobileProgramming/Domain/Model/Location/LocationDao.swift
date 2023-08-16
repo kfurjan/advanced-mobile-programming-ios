@@ -12,6 +12,7 @@ class LocationDao: Object {
     @Persisted var name: String = ""
     @Persisted var type: String = ""
     @Persisted var dimension: String = ""
+    @Persisted var url: String = ""
     @Persisted var residents: List<String> = List()
     @Persisted var nextPageExists: Bool = false
 
@@ -20,6 +21,7 @@ class LocationDao: Object {
         name: String = "",
         type: String = "",
         dimension: String = "",
+        url: String,
         residents: List<String> = List(),
         nextPageExists: Bool = false
     ) {
@@ -28,6 +30,7 @@ class LocationDao: Object {
         self.name = name
         self.type = type
         self.dimension = dimension
+        self.url = url
         self.residents = residents
         self.nextPageExists = nextPageExists
     }
@@ -45,6 +48,7 @@ class LocationDao: Object {
             name: location.name,
             type: location.type,
             dimension: location.dimension,
+            url: location.url,
             residents: list,
             nextPageExists: location.nextPageExists
         )
@@ -64,6 +68,7 @@ class LocationDao: Object {
             name: location.name,
             type: location.type,
             dimension: location.dimension,
+            url: location.url,
             residents: list,
             nextPageExists: info.next != nil ? true : false
         )
@@ -79,6 +84,7 @@ class LocationDao: Object {
             name: location.name,
             type: location.type,
             dimension: location.dimension,
+            url: location.url,
             residents: Array(location.residents),
             nextPageExists: location.nextPageExists
         )

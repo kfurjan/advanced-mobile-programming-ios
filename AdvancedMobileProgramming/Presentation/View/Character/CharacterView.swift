@@ -77,6 +77,9 @@ struct CharacterView: View {
         .onChange(of: viewModel.searchText) { _ in
             viewModel.onSearch()
         }
+        .onAppear {
+            viewModel.fetchData(loadType: .initial)
+        }
     }
 }
 

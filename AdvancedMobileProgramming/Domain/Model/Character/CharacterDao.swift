@@ -22,6 +22,7 @@ class CharacterDao: Object {
     @Persisted var episode: List<String> = List()
     @Persisted var origin: String = ""
     @Persisted var location: String = ""
+    @Persisted var url: String = ""
     @Persisted var nextPageExists: Bool = false
 
     convenience init(
@@ -35,6 +36,7 @@ class CharacterDao: Object {
         episode: List<String> = List(),
         origin: String = "",
         location: String = "",
+        url: String = "",
         nextPageExists: Bool = false
     ) {
         self.init()
@@ -48,6 +50,7 @@ class CharacterDao: Object {
         self.episode = episode
         self.origin = origin
         self.location = location
+        self.url = url
         self.nextPageExists = nextPageExists
     }
 
@@ -70,6 +73,7 @@ class CharacterDao: Object {
             episode: list,
             origin: character.origin,
             location: character.location,
+            url: character.url,
             nextPageExists: character.nextPageExists
         )
     }
@@ -94,6 +98,7 @@ class CharacterDao: Object {
             episode: list,
             origin: character.origin.name,
             location: character.location.name,
+            url: character.url,
             nextPageExists: info.next != nil ? true : false
         )
     }
@@ -114,7 +119,9 @@ class CharacterDao: Object {
             episode: Array(character.episode),
             origin: character.origin,
             location: character.location,
-            nextPageExists: character.nextPageExists        )
+            url: character.url,
+            nextPageExists: character.nextPageExists
+        )
     }
 
 }

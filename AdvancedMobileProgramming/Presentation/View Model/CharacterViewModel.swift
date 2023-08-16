@@ -23,10 +23,6 @@ final class CharacterViewModel: BaseViewModel {
     @UserDefault(UserDefaultStrings.characterPage, defaultValue: 1)
     private var page: Int
 
-    init() {
-        fetchData(loadType: .initial)
-    }
-
     /// Function which fetches data that will be shown on the UI.
     ///
     /// - Parameter loadType: ``LoadTypeEvent`` which defines which data to fetch.

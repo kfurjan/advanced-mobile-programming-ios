@@ -27,7 +27,6 @@ protocol DaoRepository {
     ///
     func deleteAll()
 
-
     /// Read all objects from database that satisfy `term` parameter.
     ///
     /// - Parameter term: term to search for in the database.
