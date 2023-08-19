@@ -59,4 +59,11 @@ final class LocationViewModel: BaseViewModel {
             self.locations = dao.read(where: searchText).map(LocationDao.toGeneralObject)
         }
     }
+
+    /// Function that exectues when user interacts with item in ``SwiftUI.List``.
+    /// - Parameter id: id of the object clicked
+    /// - Returns: ``LocationDetail`` object.
+    func onItemClicked(id: Int) -> LocationDetail {
+        dao.read(where: id)
+    }
 }

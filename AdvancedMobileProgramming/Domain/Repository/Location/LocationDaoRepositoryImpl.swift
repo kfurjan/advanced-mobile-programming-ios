@@ -8,6 +8,8 @@
 import Foundation
 import RealmSwift
 
+// swiftlint:disable force_try
+
 final class LocationDaoRepositoryImpl: DaoRepository {
 
     typealias T = LocationDao
@@ -58,5 +60,31 @@ final class LocationDaoRepositoryImpl: DaoRepository {
         }
 
         return Array(filteredLocations)
+    }
+
+    /// Read all objects from database that satisfy `id` parameter.
+    ///
+    /// - Parameter id: id of the object to search for in the database.
+    /// - Returns: ``LocationDetail`` object.
+    func read(where id: Int) -> LocationDetail {
+        let characters = localRealm!.objects(CharacterDao.self)
+        let location = localRealm!
+            .objects(LocationDao.self)
+            .where { $0.id == id }
+            .first
+
+        let filteredCharacters = characters
+            .where { $0.url.in(location?.residents ?? List<String>()) }
+            .map { CharacterDao.toGeneralObject(character: $0) }
+
+        return LocationDetail(
+            id: location?.id ?? 0,
+            name: location?.name ?? "",
+            type: location?.type ?? "",
+            dimension: location?.dimension ?? "",
+            url: location?.url ?? "",
+            residents: Array(filteredCharacters),
+            nextPageExists: location?.nextPageExists ?? false
+        )
     }
 }

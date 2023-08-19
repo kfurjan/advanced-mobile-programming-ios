@@ -61,6 +61,9 @@ final class EpisodeViewModel: BaseViewModel {
         }
     }
 
+    /// Function that exectues when user interacts with item in ``SwiftUI.List``.
+    /// - Parameter id: id of the object clicked
+    /// - Returns: ``EpisodeDetail`` object.
     func onItemClicked(id: Int) -> EpisodeDetail {
         dao.read(where: id)
     }

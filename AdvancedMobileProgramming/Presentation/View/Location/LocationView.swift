@@ -7,6 +7,79 @@
 
 import SwiftUI
 
+struct LocationDetailView: View {
+
+    let location: LocationDetail
+
+    private var locationStats: String {
+        if location.dimension.isEmpty {
+            return location.type
+        } else if location.type.isEmpty {
+            return location.dimension
+        } else {
+            return "\(location.dimension), \(location.type)"
+        }
+    }
+
+    var body: some View {
+        VStack {
+            VStack(alignment: .leading, spacing: 3) {
+                HStack {
+                    Text("Location")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+
+                HStack {
+                    Text(location.name)
+                        .font(.body)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+            }
+            .padding([.top])
+
+            VStack(alignment: .leading, spacing: 3) {
+                HStack {
+                    Text("Information")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+
+                HStack {
+                    Text(locationStats)
+                        .font(.body)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+            }
+            .padding([.top])
+
+            VStack(alignment: .leading, spacing: 3) {
+                HStack {
+                    Text("Characters")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding([.leading, .trailing])
+
+                List(location.residents, id: \.self) { character in
+                    CharacterItem(character: character)
+                        .frame(height: 50)
+                }
+            }
+            .padding([.top])
+        }
+        .navigationTitle(location.name)
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
 struct LocationItem: View {
 
     let location: Location
@@ -41,26 +114,22 @@ struct LocationView: View {
     var body: some View {
         NavigationView {
             List(viewModel.locations, id: \.self) { location in
-                LocationItem(location: location)
-                    .frame(height: 50)
-                    .onAppear {
-                        withAnimation {
+                NavigationLink(destination: LocationDetailView(location: viewModel.onItemClicked(id: location.id))) {
+                    LocationItem(location: location)
+                        .frame(height: 50)
+                        .onAppear {
                             if viewModel.locations.last == location {
                                 viewModel.onScrolledAtBottom()
                             }
                         }
-                    }
+                }
             }
             .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search locations...")
             .onChange(of: viewModel.searchText) { _ in
-                withAnimation {
-                    viewModel.onSearch()
-                }
+                viewModel.onSearch()
             }
             .refreshable {
-                withAnimation {
-                    viewModel.onRefresh()
-                }
+                viewModel.onRefresh()
             }
             .navigationTitle("Locations")
         }
