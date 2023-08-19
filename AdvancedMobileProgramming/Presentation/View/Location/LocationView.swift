@@ -72,6 +72,7 @@ struct LocationDetailView: View {
                     CharacterItem(character: character)
                         .frame(height: 50)
                 }
+                .listStyle(PlainListStyle())
             }
             .padding([.top])
         }

@@ -73,4 +73,11 @@ final class CharacterViewModel: BaseViewModel {
             self.characters = dao.readSpeacies(where: type.rawValue).map(CharacterDao.toGeneralObject)
         }
     }
+
+    /// Function that exectues when user interacts with item in ``SwiftUI.List``.
+    /// - Parameter id: id of the object clicked
+    /// - Returns: ``CharacterDetail`` object.
+    func onItemClicked(id: Int) -> CharacterDetail {
+        dao.read(where: id)
+    }
 }

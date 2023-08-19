@@ -73,4 +73,35 @@ final class CharacterDaoRepositoryImpl: DaoRepository {
 
         return Array(filteredCharacters)
     }
+
+    /// Read all objects from database that satisfy `id` parameter.
+    ///
+    /// - Parameter id: id of the object to search for in the database.
+    /// - Returns: ``CharacterDetail`` object.
+    func read(where id: Int) -> CharacterDetail {
+        let episodes = localRealm!.objects(EpisodeDao.self)
+        let character = localRealm!
+            .objects(CharacterDao.self)
+            .where { $0.id == id }
+            .first
+
+        let filteredEpisodes = episodes
+            .where { $0.url.in(character?.episode ?? List<String>()) }
+            .map { EpisodeDao.toGeneralObject(episode: $0) }
+
+        return CharacterDetail(
+            id: character?.id ?? 0,
+            name: character?.name ?? "",
+            status: character?.status ?? "",
+            species: character?.species ?? "",
+            type: character?.type ?? "",
+            gender: character?.gender ?? "",
+            image: character?.image ?? "",
+            episode: Array(filteredEpisodes),
+            origin: character?.origin ?? "",
+            location: character?.location ?? "",
+            url: character?.url ?? "",
+            nextPageExists: character?.nextPageExists ?? false
+        )
+    }
 }

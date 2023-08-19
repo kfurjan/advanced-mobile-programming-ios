@@ -67,6 +67,7 @@ struct EpisodeDetailView: View {
                     CharacterItem(character: character)
                         .frame(height: 50)
                 }
+                .listStyle(PlainListStyle())
             }
             .padding([.top])
         }
