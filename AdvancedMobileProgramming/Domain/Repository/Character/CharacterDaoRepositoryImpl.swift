@@ -37,12 +37,27 @@ final class CharacterDaoRepositoryImpl: DaoRepository {
         }
     }
 
+    /// Delete  object ``CharacterDao`` from the database.
+    ///
+    func delete(where id: Int) {
+        try! localRealm!.write {
+            let character = localRealm!
+                .objects(CharacterDao.self)
+                .where { $0.id == id }
+                .first
+
+            guard let character = character else { return }
+
+            localRealm!.delete(character)
+        }
+    }
+
     /// Delete all objects of object ``CharacterDao`` from the database.
     ///
     func deleteAll() {
         try! localRealm!.write {
-            let episodes = localRealm!.objects(CharacterDao.self)
-            localRealm!.delete(episodes)
+            let characters = localRealm!.objects(CharacterDao.self)
+            localRealm!.delete(characters)
         }
     }
 

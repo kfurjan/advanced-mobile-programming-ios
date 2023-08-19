@@ -103,25 +103,38 @@ struct EpisodeView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.episodes, id: \.self) { episode in
-                NavigationLink(destination: EpisodeDetailView(episode: viewModel.onItemClicked(id: episode.id))) {
-                    EpisodeItem(episode: episode)
-                        .frame(height: 50)
-                        .onAppear {
-                            if viewModel.episodes.last == episode {
-                                viewModel.onScrolledAtBottom()
-                            }
+            VStack(alignment: .leading) {
+                List {
+                    ForEach(viewModel.episodes, id: \.self) { episode in
+                        NavigationLink(destination: EpisodeDetailView(episode: viewModel.onItemClicked(id: episode.id))) {
+                            EpisodeItem(episode: episode)
+                                .frame(height: 50)
+                                .onAppear {
+                                    if viewModel.episodes.last == episode {
+                                        viewModel.onScrolledAtBottom()
+                                    }
+                                }
                         }
+                    }
+                    .onMove { from, to in
+                        viewModel.onMove(fromOffsets: from, toOffset: to)
+                    }
+                    .onDelete { index in
+                        viewModel.onDelete(at: index)
+                    }
+                }
+                .refreshable {
+                    viewModel.onRefresh()
                 }
             }
-            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search episodes...")
-            .onChange(of: viewModel.searchText) { _ in
-                viewModel.onSearch()
-            }
-            .refreshable {
-                viewModel.onRefresh()
+            .toolbar {
+                EditButton()
             }
             .navigationTitle("Episodes")
+        }
+        .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search episodes...")
+        .onChange(of: viewModel.searchText) { _ in
+            viewModel.onSearch()
         }
         .onAppear {
             viewModel.fetchData(loadType: .initial)

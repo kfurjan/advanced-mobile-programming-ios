@@ -158,23 +158,34 @@ struct CharacterView: View {
                 })
                 .padding([.leading, .trailing])
 
-                List(viewModel.characters, id: \.self) { character in
-                    NavigationLink(
-                        destination: CharacterDetailView(character: viewModel.onItemClicked(id: character.id))
-                    ) {
-                        CharacterItem(character: character)
-                            .frame(height: 50)
-                            .onAppear {
-                                if viewModel.characters.last == character {
-                                    viewModel.onScrolledAtBottom()
+                List {
+                    ForEach(viewModel.characters, id: \.self) { character in
+                        NavigationLink(
+                            destination: CharacterDetailView(character: viewModel.onItemClicked(id: character.id))
+                        ) {
+                            CharacterItem(character: character)
+                                .frame(height: 50)
+                                .onAppear {
+                                    if viewModel.characters.last == character {
+                                        viewModel.onScrolledAtBottom()
+                                    }
                                 }
-                            }
+                        }
+                    }
+                    .onMove { from, to in
+                        viewModel.onMove(fromOffsets: from, toOffset: to)
+                    }
+                    .onDelete { index in
+                        viewModel.onDelete(at: index)
                     }
                 }
                 .refreshable {
                     viewModel.onRefresh()
                 }
                 .padding([.bottom], 1)
+            }
+            .toolbar {
+                EditButton()
             }
             .navigationTitle("Characters")
         }

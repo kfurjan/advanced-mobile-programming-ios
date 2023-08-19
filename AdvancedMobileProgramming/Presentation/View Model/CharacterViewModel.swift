@@ -80,4 +80,18 @@ final class CharacterViewModel: BaseViewModel {
     func onItemClicked(id: Int) -> CharacterDetail {
         dao.read(where: id)
     }
+
+    /// Function that exectues when user moves an item within ``SwiftUI.List``.
+    /// - Parameters:
+    ///   - source: Initial index of the item.
+    ///   - destination: Destination index of the item.
+    func onMove(fromOffsets source: IndexSet, toOffset destination: Int) {
+        self.characters.move(fromOffsets: source, toOffset: destination)
+    }
+
+    /// Function that exectues when user deletes an item within ``SwiftUI.List``.
+    /// - Parameter offsets: index of the item
+    func onDelete(at offsets: IndexSet) {
+        self.characters.remove(atOffsets: offsets)
+    }
 }

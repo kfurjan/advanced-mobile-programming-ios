@@ -114,25 +114,39 @@ struct LocationView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.locations, id: \.self) { location in
-                NavigationLink(destination: LocationDetailView(location: viewModel.onItemClicked(id: location.id))) {
-                    LocationItem(location: location)
-                        .frame(height: 50)
-                        .onAppear {
-                            if viewModel.locations.last == location {
-                                viewModel.onScrolledAtBottom()
-                            }
+            VStack(alignment: .leading) {
+                List {
+                    ForEach(viewModel.locations, id: \.self) { location in
+                        NavigationLink(destination: LocationDetailView(location: viewModel.onItemClicked(id: location.id))) {
+                            LocationItem(location: location)
+                                .frame(height: 50)
+                                .onAppear {
+                                    if viewModel.locations.last == location {
+                                        viewModel.onScrolledAtBottom()
+                                    }
+                                }
                         }
+
+                    }
+                    .onMove { from, to in
+                        viewModel.onMove(fromOffsets: from, toOffset: to)
+                    }
+                    .onDelete { index in
+                        viewModel.onDelete(at: index)
+                    }
+                }
+                .refreshable {
+                    viewModel.onRefresh()
                 }
             }
-            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search locations...")
-            .onChange(of: viewModel.searchText) { _ in
-                viewModel.onSearch()
-            }
-            .refreshable {
-                viewModel.onRefresh()
+            .toolbar {
+                EditButton()
             }
             .navigationTitle("Locations")
+        }
+        .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer, prompt: "Search locations...")
+        .onChange(of: viewModel.searchText) { _ in
+            viewModel.onSearch()
         }
         .onAppear {
             viewModel.fetchData(loadType: .initial)
