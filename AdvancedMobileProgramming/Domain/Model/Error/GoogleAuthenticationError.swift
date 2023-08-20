@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum GoogleAuthenticationError: Error, CustomStringConvertible, Localizable {
+enum GoogleAuthenticationError: Error, CustomStringConvertible, Equatable, Localizable {
 
     case userError
     case generalError(message: String)

@@ -106,7 +106,9 @@ struct EpisodeView: View {
             VStack(alignment: .leading) {
                 List {
                     ForEach(viewModel.episodes, id: \.self) { episode in
-                        NavigationLink(destination: EpisodeDetailView(episode: viewModel.onItemClicked(id: episode.id))) {
+                        NavigationLink(
+                            destination: EpisodeDetailView(episode: viewModel.onItemClicked(id: episode.id))
+                        ) {
                             EpisodeItem(episode: episode)
                                 .frame(height: 50)
                                 .onAppear {

@@ -7,8 +7,6 @@
 
 import RealmSwift
 
-// TODO: origin and location to 'Location' type
-
 // MARK: - CharacterDao
 class CharacterDao: Object {
 

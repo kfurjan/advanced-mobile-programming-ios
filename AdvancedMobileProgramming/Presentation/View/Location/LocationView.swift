@@ -117,7 +117,9 @@ struct LocationView: View {
             VStack(alignment: .leading) {
                 List {
                     ForEach(viewModel.locations, id: \.self) { location in
-                        NavigationLink(destination: LocationDetailView(location: viewModel.onItemClicked(id: location.id))) {
+                        NavigationLink(
+                            destination: LocationDetailView(location: viewModel.onItemClicked(id: location.id))
+                        ) {
                             LocationItem(location: location)
                                 .frame(height: 50)
                                 .onAppear {

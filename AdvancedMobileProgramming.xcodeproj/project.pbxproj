@@ -112,9 +112,16 @@
 		E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F1812A6EC0CF0065172A /* ContentView.swift */; };
 		E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E978F1832A6EC0D10065172A /* Assets.xcassets */; };
 		E978F1872A6EC0D10065172A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E978F1862A6EC0D10065172A /* Preview Assets.xcassets */; };
-		E978F1912A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F1902A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift */; };
-		E978F19B2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F19A2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift */; };
-		E978F19D2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F19C2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift */; };
+		E999E4352A92252C0038CEE1 /* UIApplicationExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E4342A92252C0038CEE1 /* UIApplicationExtensionsTest.swift */; };
+		E999E4362A92259C0038CEE1 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */; };
+		E999E4372A92259C0038CEE1 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7322A716AE1007A7A42 /* UIApplicationExtensions.swift */; };
+		E999E4392A9225A10038CEE1 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2063D2A8282EB00AEDC96 /* PropertyWrappers.swift */; };
+		E999E43A2A9225A10038CEE1 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2063D2A8282EB00AEDC96 /* PropertyWrappers.swift */; };
+		E999E4422A9227990038CEE1 /* GetGoogleUserUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E4402A9227990038CEE1 /* GetGoogleUserUseCaseTest.swift */; };
+		E999E44B2A92292D0038CEE1 /* SignInWithGoogleUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E44A2A92292D0038CEE1 /* SignInWithGoogleUseCaseTest.swift */; };
+		E999E44F2A922A2A0038CEE1 /* EpisodeApiRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E44E2A922A2A0038CEE1 /* EpisodeApiRepositoryTests.swift */; };
+		E999E4512A922B3D0038CEE1 /* EpisodeDaoRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E4502A922B3D0038CEE1 /* EpisodeDaoRepositoryTests.swift */; };
+		E999E4572A922C5C0038CEE1 /* EpisodePagingSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E999E4562A922C5C0038CEE1 /* EpisodePagingSourceTests.swift */; };
 		E9E2063E2A8282EB00AEDC96 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2063D2A8282EB00AEDC96 /* PropertyWrappers.swift */; };
 		E9E206422A82869C00AEDC96 /* DaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206412A82869C00AEDC96 /* DaoRepository.swift */; };
 		E9E206442A82878A00AEDC96 /* EpisodeDaoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E206432A82878A00AEDC96 /* EpisodeDaoRepositoryImpl.swift */; };
@@ -231,10 +238,13 @@
 		E978F1832A6EC0D10065172A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E978F1862A6EC0D10065172A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E978F18C2A6EC0D10065172A /* AdvancedMobileProgrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedMobileProgrammingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E978F1902A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMobileProgrammingTests.swift; sourceTree = "<group>"; };
 		E978F1962A6EC0D20065172A /* AdvancedMobileProgrammingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedMobileProgrammingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E978F19A2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMobileProgrammingUITests.swift; sourceTree = "<group>"; };
-		E978F19C2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMobileProgrammingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E999E4342A92252C0038CEE1 /* UIApplicationExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensionsTest.swift; sourceTree = "<group>"; };
+		E999E4402A9227990038CEE1 /* GetGoogleUserUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoogleUserUseCaseTest.swift; sourceTree = "<group>"; };
+		E999E44A2A92292D0038CEE1 /* SignInWithGoogleUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogleUseCaseTest.swift; sourceTree = "<group>"; };
+		E999E44E2A922A2A0038CEE1 /* EpisodeApiRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeApiRepositoryTests.swift; sourceTree = "<group>"; };
+		E999E4502A922B3D0038CEE1 /* EpisodeDaoRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDaoRepositoryTests.swift; sourceTree = "<group>"; };
+		E999E4562A922C5C0038CEE1 /* EpisodePagingSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePagingSourceTests.swift; sourceTree = "<group>"; };
 		E9E2063D2A8282EB00AEDC96 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		E9E206412A82869C00AEDC96 /* DaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoRepository.swift; sourceTree = "<group>"; };
 		E9E206432A82878A00AEDC96 /* EpisodeDaoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDaoRepositoryImpl.swift; sourceTree = "<group>"; };
@@ -334,16 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				E90B3F292A78EE0200418AE0 /* Localization */,
-				E90B3F282A78EDF600418AE0 /* Repository */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		E90B3F282A78EDF600418AE0 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		E90B3F292A78EE0200418AE0 /* Localization */ = {
@@ -568,7 +570,8 @@
 		E978F18F2A6EC0D10065172A /* AdvancedMobileProgrammingTests */ = {
 			isa = PBXGroup;
 			children = (
-				E978F1902A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift */,
+				E999E43D2A9227730038CEE1 /* Domain */,
+				E999E4312A9225060038CEE1 /* Core */,
 			);
 			path = AdvancedMobileProgrammingTests;
 			sourceTree = "<group>";
@@ -576,10 +579,60 @@
 		E978F1992A6EC0D20065172A /* AdvancedMobileProgrammingUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E978F19A2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift */,
-				E978F19C2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift */,
 			);
 			path = AdvancedMobileProgrammingUITests;
+			sourceTree = "<group>";
+		};
+		E999E4312A9225060038CEE1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E999E4322A92250B0038CEE1 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E999E4322A92250B0038CEE1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E999E4342A92252C0038CEE1 /* UIApplicationExtensionsTest.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E999E43D2A9227730038CEE1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E999E4542A922BCC0038CEE1 /* Paging */,
+				E999E44D2A9229BC0038CEE1 /* Repository */,
+				E999E43E2A9227790038CEE1 /* Use Case */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E999E43E2A9227790038CEE1 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				E999E4402A9227990038CEE1 /* GetGoogleUserUseCaseTest.swift */,
+				E999E44A2A92292D0038CEE1 /* SignInWithGoogleUseCaseTest.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		E999E44D2A9229BC0038CEE1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E999E44E2A922A2A0038CEE1 /* EpisodeApiRepositoryTests.swift */,
+				E999E4502A922B3D0038CEE1 /* EpisodeDaoRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E999E4542A922BCC0038CEE1 /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+				E999E4562A922C5C0038CEE1 /* EpisodePagingSourceTests.swift */,
+			);
+			path = Paging;
 			sourceTree = "<group>";
 		};
 		E9E206472A837C6C00AEDC96 /* Paging */ = {
@@ -882,8 +935,10 @@
 				E9E2069F2A893C7100AEDC96 /* CharacterView.swift in Sources */,
 				E90B3F042A77D70D00418AE0 /* Info.swift in Sources */,
 				E9E206502A83808200AEDC96 /* EpisodePagingSource.swift in Sources */,
+				E999E4352A92252C0038CEE1 /* UIApplicationExtensionsTest.swift in Sources */,
 				E925A7762A725F69007A7A42 /* StringConstants.swift in Sources */,
 				E9E2064A2A837D0A00AEDC96 /* PagingSource.swift in Sources */,
+				E999E4362A92259C0038CEE1 /* UIApplicationExtensions.swift in Sources */,
 				E9E206942A893BC200AEDC96 /* CharacterViewModel.swift in Sources */,
 				E925A7972A7262C3007A7A42 /* UserDetailView.swift in Sources */,
 				E9E2066D2A89110200AEDC96 /* LocationPagingSource.swift in Sources */,
@@ -897,18 +952,23 @@
 				E9E206722A89120D00AEDC96 /* LocationViewModel.swift in Sources */,
 				E9E206672A89100200AEDC96 /* LocationDaoRepositoryImpl.swift in Sources */,
 				E925A75D2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
+				E999E4572A922C5C0038CEE1 /* EpisodePagingSourceTests.swift in Sources */,
 				E90B3F002A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
-				E978F1912A6EC0D10065172A /* AdvancedMobileProgrammingTests.swift in Sources */,
 				E925A7AC2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E9E206892A893A5100AEDC96 /* CharacterApiRepositoryImpl.swift in Sources */,
 				E925A7872A726178007A7A42 /* LoginView.swift in Sources */,
+				E999E4512A922B3D0038CEE1 /* EpisodeDaoRepositoryTests.swift in Sources */,
 				E9E2068F2A893B0D00AEDC96 /* CharacterPagingSource.swift in Sources */,
 				E9E206782A89133100AEDC96 /* LocationView.swift in Sources */,
 				E9E206A82A89428200AEDC96 /* FilterRowView.swift in Sources */,
 				E90B3F0F2A77DADC00418AE0 /* LocationApi.swift in Sources */,
+				E999E44B2A92292D0038CEE1 /* SignInWithGoogleUseCaseTest.swift in Sources */,
 				E925A76C2A725E00007A7A42 /* LoginForm.swift in Sources */,
+				E999E4422A9227990038CEE1 /* GetGoogleUserUseCaseTest.swift in Sources */,
+				E999E4392A9225A10038CEE1 /* PropertyWrappers.swift in Sources */,
 				E90B3F352A821E9400418AE0 /* ApiRepository.swift in Sources */,
 				E925A78C2A726235007A7A42 /* User.swift in Sources */,
+				E999E44F2A922A2A0038CEE1 /* EpisodeApiRepositoryTests.swift in Sources */,
 				E925A7A72A726385007A7A42 /* ButtonStyles.swift in Sources */,
 				E90B3F3B2A82207B00418AE0 /* EpisodeApiRepositoryImpl.swift in Sources */,
 				E90B3F2C2A78EE1100418AE0 /* Localizable.swift in Sources */,
@@ -927,7 +987,6 @@
 				E925A75E2A725BBA007A7A42 /* SignInWithGoogleUseCase.swift in Sources */,
 				E925A7492A725A30007A7A42 /* AppDelegate.swift in Sources */,
 				E9E2065D2A88CF3800AEDC96 /* Location.swift in Sources */,
-				E978F19D2A6EC0D20065172A /* AdvancedMobileProgrammingUITestsLaunchTests.swift in Sources */,
 				E90B3F102A77DADC00418AE0 /* LocationApi.swift in Sources */,
 				E90B3F1C2A77DD0900418AE0 /* CharacterApi.swift in Sources */,
 				E9E206A42A8940B100AEDC96 /* SpeciesType.swift in Sources */,
@@ -936,6 +995,7 @@
 				E925A7982A7262C3007A7A42 /* UserDetailView.swift in Sources */,
 				E9E206862A89395400AEDC96 /* CharacterDaoRepositoryImpl.swift in Sources */,
 				E9E206902A893B0D00AEDC96 /* CharacterPagingSource.swift in Sources */,
+				E999E4372A92259C0038CEE1 /* UIApplicationExtensions.swift in Sources */,
 				E90B3F2D2A78EE1100418AE0 /* Localizable.swift in Sources */,
 				E925A7662A725D94007A7A42 /* AuthenticationViewModel.swift in Sources */,
 				E925A7592A725B71007A7A42 /* GoogleAuthenticationError.swift in Sources */,
@@ -949,7 +1009,6 @@
 				E9E206A02A893C7100AEDC96 /* CharacterView.swift in Sources */,
 				E90B3F052A77D70D00418AE0 /* Info.swift in Sources */,
 				E9E206952A893BC200AEDC96 /* CharacterViewModel.swift in Sources */,
-				E978F19B2A6EC0D20065172A /* AdvancedMobileProgrammingUITests.swift in Sources */,
 				E925A76D2A725E00007A7A42 /* LoginForm.swift in Sources */,
 				E90B3F202A77DD1100418AE0 /* CharacterDao.swift in Sources */,
 				E9E206512A83808200AEDC96 /* EpisodePagingSource.swift in Sources */,
@@ -959,6 +1018,7 @@
 				E90B3F012A77D6AA00418AE0 /* EpisodeApi.swift in Sources */,
 				E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */,
 				E9E206632A890F2600AEDC96 /* LocationApiRepositoryImpl.swift in Sources */,
+				E999E43A2A9225A10038CEE1 /* PropertyWrappers.swift in Sources */,
 				E925A78D2A726235007A7A42 /* User.swift in Sources */,
 				E925A7922A726269007A7A42 /* UserViewModel.swift in Sources */,
 				E9E2068A2A893A5100AEDC96 /* CharacterApiRepositoryImpl.swift in Sources */,

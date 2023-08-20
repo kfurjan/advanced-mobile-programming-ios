@@ -8,6 +8,8 @@
 import Foundation
 import RealmSwift
 
+// swiftlint:disable force_try
+
 final class CharacterDaoRepositoryImpl: DaoRepository {
 
     typealias T = CharacterDao
