@@ -108,6 +108,7 @@
 		E925A7AB2A7263B6007A7A42 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7AA2A7263B6007A7A42 /* Transitions.swift */; };
 		E925A7AC2A7263B6007A7A42 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7AA2A7263B6007A7A42 /* Transitions.swift */; };
 		E925A7AD2A7263B6007A7A42 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925A7AA2A7263B6007A7A42 /* Transitions.swift */; };
+		E95B6FE12AA79EE600A18960 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E95B6FDF2AA79EE600A18960 /* Localizable.strings */; };
 		E978F1802A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */; };
 		E978F1822A6EC0CF0065172A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E978F1812A6EC0CF0065172A /* ContentView.swift */; };
 		E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E978F1832A6EC0D10065172A /* Assets.xcassets */; };
@@ -232,6 +233,7 @@
 		E925A7A12A72634E007A7A42 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		E925A7A52A726385007A7A42 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		E925A7AA2A7263B6007A7A42 /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
+		E95B6FE02AA79EE600A18960 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E978F17C2A6EC0CE0065172A /* AdvancedMobileProgramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedMobileProgramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E978F17F2A6EC0CF0065172A /* AdvancedMobileProgrammingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedMobileProgrammingApp.swift; sourceTree = "<group>"; };
 		E978F1812A6EC0CF0065172A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -547,6 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				E925A7452A7259F5007A7A42 /* Info.plist */,
+				E95B6FDF2AA79EE600A18960 /* Localizable.strings */,
 				E925A7352A725616007A7A42 /* Domain */,
 				E925A72B2A7169A8007A7A42 /* Core */,
 				E925A7612A725D6F007A7A42 /* Presentation */,
@@ -803,6 +806,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hr,
 			);
 			mainGroup = E978F1732A6EC0CE0065172A;
 			packageReferences = (
@@ -832,6 +836,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E925A7422A72599A007A7A42 /* GoogleService-Info.plist in Resources */,
+				E95B6FE12AA79EE600A18960 /* Localizable.strings in Resources */,
 				E978F1872A6EC0D10065172A /* Preview Assets.xcassets in Resources */,
 				E978F1842A6EC0D10065172A /* Assets.xcassets in Resources */,
 				E90B3EF22A778E7E00418AE0 /* lottie-login-animation.json in Resources */,
@@ -1050,6 +1055,17 @@
 			productRef = E978F1AF2A6EC5A90065172A /* SwiftLint */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E95B6FDF2AA79EE600A18960 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95B6FE02AA79EE600A18960 /* hr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E978F19E2A6EC0D20065172A /* Debug */ = {

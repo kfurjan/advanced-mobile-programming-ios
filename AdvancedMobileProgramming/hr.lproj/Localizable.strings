@@ -1,0 +1,93 @@
+/* No comment provided by engineer. */
+"Air date" = "Datum emitiranja";
+
+/* Alien SpeciesType */
+"Alien" = "Vanzemaljac";
+
+/* All SpeciesType */
+"All" = "Sve";
+
+/* Animal SpeciesType */
+"Animal" = "Životinja";
+
+/* No comment provided by engineer. */
+"Are you sure you want to sign out?" = "Jeste li sigurni da se želite odjaviti?";
+
+/* ApiError.badRequest */
+"Bad request!" = "Pogrešan mrežni zahtjev!";
+
+/* No comment provided by engineer. */
+"Cancel" = "Odustani";
+
+/* Characters tab item */
+"Characters" = "Likovi";
+
+/* ApiError.databaseException */
+"Database error occured!" = "Greška pri komunikaciji s bazom podataka!";
+
+/* No comment provided by engineer. */
+"Episode name" = "Naziv epizode";
+
+/* Episodes tab item */
+"Episodes" = "Epizode";
+
+/* GoogleAuthenticationError.userError */
+"Error when fetching user information!" = "Greška prilikom dohvaćanja podataka o korisniku!";
+
+/* Human SpeciesType */
+"Human" = "Čovjek";
+
+/* No comment provided by engineer. */
+"Information" = "Informacija";
+
+/* No comment provided by engineer. */
+"Location" = "Lokacija";
+
+/* Locations tab item */
+"Locations" = "Lokacije";
+
+/* Mythological SpeciesType */
+"Mythological" = "Mitološki";
+
+/* No comment provided by engineer. */
+"Name" = "Ime";
+
+/* ApiError.noSuchEntity */
+"No such entity!" = "Ne postoji takav entitet!";
+
+/* ApiError.serializationException */
+"Request body had incorrect format!" = "Tijelo zahtjeva imalo je pogrešan format!";
+
+/* Robot SpeciesType */
+"Robot" = "Robot";
+
+/* No comment provided by engineer. */
+"Search characters..." = "Pretraži likove...";
+
+/* No comment provided by engineer. */
+"Search episodes..." = "Pretraži epizode...";
+
+/* No comment provided by engineer. */
+"Search locations..." = "Pretraži lokacije...";
+
+/* No comment provided by engineer. */
+"Sign in with Google" = "Prijava putem Google-a";
+
+/* No comment provided by engineer. */
+"Sign out" = "Odjavi se";
+
+/* No comment provided by engineer. */
+"Type" = "Tip";
+
+/* ApiError.unableToDetchData */
+"Unable to fetch data!" = "Nemoguće dohvatiti podatke!";
+
+/* Unknown SpeciesType */
+"Unknown" = "Nepoznato";
+
+/* User tab item */
+"User" = "Korisnik";
+
+/* No comment provided by engineer. */
+"Yes" = "Da";
+
